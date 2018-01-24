@@ -110,20 +110,26 @@ var gen_readme = function(){
     return [title, featstr].join("\n")
   }
 
+  var gen_hiho = function(){
+    var title = "\n### Code";
+    var code = "```bash\nnpm install\n### 修改hiho.js中的uid\nnode hiho.js # 即可生成readme.md\n```";
+    return [title, code].join("\n") + "\n"
+  }
+
   var gen_solution = function(){
     var title = "\n### Solutions\n";
     var head = "| # | Problem | Solution |";
     var split = "|:-:|:-------:|:--------:|";
     var body = "";
     problems.forEach(function(problem, idx){
-      var pn = "[" + problem.name + "](" + host + problem.href + ")";
+      var pn = "[" + problem.name + "](http://" + host + problem.href + ")";
       var ps = "[" + problem.id + "](./solutions/" + problem.id + ".cpp)";
       body += "|" + [idx, pn, ps].join("|") + "|\n"
     })
     return [title, head, split, body].join("\n")
   }
 
-  var mstr = gen_title() + gen_userinfo() + gen_feature() + gen_solution();
+  var mstr = [gen_title(), gen_userinfo(), gen_feature(), gen_hiho(), gen_solution()].join("");
   fs.writeFile("./readme.md", mstr, function(err){
     if(err){
       return console.log("generation failed!");
