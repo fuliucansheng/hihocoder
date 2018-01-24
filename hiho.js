@@ -1,5 +1,4 @@
 var fs = require("fs")
-var async = require("async")
 var http = require("http")
 var cheerio = require("cheerio")
 
@@ -27,12 +26,15 @@ var get_problem = function(){
         var pid = $(problem).find("h4").text().split("：")[0].substr(1).trim();
         var pname = $(problem).find("h4").text().split("：")[1].trim();
         problems.push({
-          "id": pid,
+          "id": parseInt(pid),
           "href": plink,
           "name": pname
         })
       });
-      gen_readme(problems.reverse());
+      problems.sort(function(a,b){
+        return a.id - b.id;
+      })
+      gen_readme();
     })
   })
 
@@ -76,6 +78,7 @@ var get_userinfo = function(){
         var v = $(li).text().split("：")[1].trim();
         userinfo[dict[k]] = v;
       })
+      get_problem();
     })
   })
 
@@ -124,7 +127,7 @@ var gen_readme = function(){
     problems.forEach(function(problem, idx){
       var pn = "[" + problem.name + "](http://" + host + problem.href + ")";
       var ps = "[" + problem.id + "](./solutions/" + problem.id + ".cpp)";
-      body += "|" + [idx, pn, ps].join("|") + "|\n"
+      body += "|" + [idx + 1, pn, ps].join("|") + "|\n"
     })
     return [title, head, split, body].join("\n")
   }
@@ -138,7 +141,4 @@ var gen_readme = function(){
   })
 }
 
-async.parallel([
-  get_userinfo,
-  get_problem
-], gen_readme);
+get_userinfo()

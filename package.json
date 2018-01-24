@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/fuliucansheng/hihocoder#readme",
   "dependencies": {
-    "async": "^2.6.0",
     "cheerio": "^1.0.0-rc.2"
   }
 }
