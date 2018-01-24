@@ -1,0 +1,23 @@
+{
+  "name": "hihocoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hiho.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuliucansheng/hihocoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuliucansheng/hihocoder/issues"
+  },
+  "homepage": "https://github.com/fuliucansheng/hihocoder#readme",
+  "dependencies": {
+    "async": "^2.6.0",
+    "cheerio": "^1.0.0-rc.2"
+  }
+}
