@@ -11,7 +11,7 @@
 ### Solutions
 
 | # | Problem | Solution |
-|!-!|!-------!|!--------!|
+|:-:|:-------:|:--------:|
 |0|[A + B](www.hihocoder.com/problemset/problem/1000)|[1000](./solutions/1000.cpp)|
 |1|[Trie树](www.hihocoder.com/problemset/problem/1014)|[1014](./solutions/1014.cpp)|
 |2|[KMP算法](www.hihocoder.com/problemset/problem/1015)|[1015](./solutions/1015.cpp)|
