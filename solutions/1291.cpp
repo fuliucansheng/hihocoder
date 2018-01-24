@@ -33,7 +33,7 @@ void floodfill(point x,int dict[102][102][102]){
     }
 }
 int main() {
-    freopen("../input.txt","r",stdin);
+    //freopen("../input.txt","r",stdin);
     int m,n;
     cin>>m;
     for(int i=0;i<m;i++){

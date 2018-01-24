@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 352&nbsp;|&nbsp;Submit: 1043&nbsp;|&nbsp;Hiho: 39&nbsp;|&nbsp;Contest: 31
+##### 拂柳残声&nbsp;|&nbsp;AC: 352&nbsp;|&nbsp;Submit: 1087&nbsp;|&nbsp;Hiho: 39&nbsp;|&nbsp;Contest: 31
 
 ### Features
 
@@ -169,157 +169,199 @@ node hiho.js # 即可生成readme.md
 |148|[数论一·Miller-Rabin质数测试](http://www.hihocoder.com/problemset/problem/1287)|[1287](./solutions/1287.cpp)|
 |149|[Font Size](http://www.hihocoder.com/problemset/problem/1288)|[1288](./solutions/1288.cpp)|
 |150|[403 Forbidden](http://www.hihocoder.com/problemset/problem/1289)|[1289](./solutions/1289.cpp)|
-|151|[数论二·Eular质数筛法](http://www.hihocoder.com/problemset/problem/1295)|[1295](./solutions/1295.cpp)|
-|152|[数论三·约瑟夫问题](http://www.hihocoder.com/problemset/problem/1296)|[1296](./solutions/1296.cpp)|
-|153|[数论四·扩展欧几里德](http://www.hihocoder.com/problemset/problem/1297)|[1297](./solutions/1297.cpp)|
-|154|[数论五·欧拉函数](http://www.hihocoder.com/problemset/problem/1298)|[1298](./solutions/1298.cpp)|
-|155|[Cheap Ticket](http://www.hihocoder.com/problemset/problem/1299)|[1299](./solutions/1299.cpp)|
-|156|[搜索一·24点](http://www.hihocoder.com/problemset/problem/1304)|[1304](./solutions/1304.cpp)|
-|157|[搜索二·骑士问题](http://www.hihocoder.com/problemset/problem/1308)|[1308](./solutions/1308.cpp)|
-|158|[搜索三·启发式搜索](http://www.hihocoder.com/problemset/problem/1312)|[1312](./solutions/1312.cpp)|
-|159|[Treasure Boxes](http://www.hihocoder.com/problemset/problem/1313)|[1313](./solutions/1313.cpp)|
-|160|[Longest Non-Decreasing Subsequence](http://www.hihocoder.com/problemset/problem/1314)|[1314](./solutions/1314.cpp)|
-|161|[搜索四·跳舞链](http://www.hihocoder.com/problemset/problem/1317)|[1317](./solutions/1317.cpp)|
-|162|[Region Perimeter](http://www.hihocoder.com/problemset/problem/1319)|[1319](./solutions/1319.cpp)|
-|163|[String Folding](http://www.hihocoder.com/problemset/problem/1320)|[1320](./solutions/1320.cpp)|
-|164|[Tree or Not](http://www.hihocoder.com/problemset/problem/1322)|[1322](./solutions/1322.cpp)|
-|165|[Making Palindrome](http://www.hihocoder.com/problemset/problem/1323)|[1323](./solutions/1323.cpp)|
-|166|[Hilbert Curve](http://www.hihocoder.com/problemset/problem/1324)|[1324](./solutions/1324.cpp)|
-|167|[平衡树·Treap](http://www.hihocoder.com/problemset/problem/1325)|[1325](./solutions/1325.cpp)|
-|168|[Ordered Binary String](http://www.hihocoder.com/problemset/problem/1326)|[1326](./solutions/1326.cpp)|
-|169|[Separating Same Characters](http://www.hihocoder.com/problemset/problem/1327)|[1327](./solutions/1327.cpp)|
-|170|[Maze Escape](http://www.hihocoder.com/problemset/problem/1328)|[1328](./solutions/1328.cpp)|
-|171|[平衡树·Splay](http://www.hihocoder.com/problemset/problem/1329)|[1329](./solutions/1329.cpp)|
-|172|[平衡树·Splay2](http://www.hihocoder.com/problemset/problem/1333)|[1333](./solutions/1333.cpp)|
-|173|[Word Construction](http://www.hihocoder.com/problemset/problem/1334)|[1334](./solutions/1334.cpp)|
-|174|[Stable Members](http://www.hihocoder.com/problemset/problem/1343)|[1343](./solutions/1343.cpp)|
-|175|[Binary Watch](http://www.hihocoder.com/problemset/problem/1350)|[1350](./solutions/1350.cpp)|
-|176|[Popular Products](http://www.hihocoder.com/problemset/problem/1351)|[1351](./solutions/1351.cpp)|
-|177|[满减优惠](http://www.hihocoder.com/problemset/problem/1353)|[1353](./solutions/1353.cpp)|
-|178|[积水的城市](http://www.hihocoder.com/problemset/problem/1354)|[1354](./solutions/1354.cpp)|
-|179|[分隔相同整数](http://www.hihocoder.com/problemset/problem/1356)|[1356](./solutions/1356.cpp)|
-|180|[小Ho的防护盾](http://www.hihocoder.com/problemset/problem/1357)|[1357](./solutions/1357.cpp)|
-|181|[小P的强力值](http://www.hihocoder.com/problemset/problem/1358)|[1358](./solutions/1358.cpp)|
-|182|[震荡数组](http://www.hihocoder.com/problemset/problem/1359)|[1359](./solutions/1359.cpp)|
-|183|[Playfair密码表](http://www.hihocoder.com/problemset/problem/1361)|[1361](./solutions/1361.cpp)|
-|184|[修补木桶](http://www.hihocoder.com/problemset/problem/1362)|[1362](./solutions/1362.cpp)|
-|185|[图像算子](http://www.hihocoder.com/problemset/problem/1363)|[1363](./solutions/1363.cpp)|
-|186|[图片排版](http://www.hihocoder.com/problemset/problem/1365)|[1365](./solutions/1365.cpp)|
-|187|[逆序单词](http://www.hihocoder.com/problemset/problem/1366)|[1366](./solutions/1366.cpp)|
-|188|[快乐数字](http://www.hihocoder.com/problemset/problem/1370)|[1370](./solutions/1370.cpp)|
-|189|[翻转链表](http://www.hihocoder.com/problemset/problem/1371)|[1371](./solutions/1371.cpp)|
-|190|[平方求和](http://www.hihocoder.com/problemset/problem/1372)|[1372](./solutions/1372.cpp)|
-|191|[沙漠之旅](http://www.hihocoder.com/problemset/problem/1375)|[1375](./solutions/1375.cpp)|
-|192|[数组去重](http://www.hihocoder.com/problemset/problem/1376)|[1376](./solutions/1376.cpp)|
-|193|[设计LRU Cache](http://www.hihocoder.com/problemset/problem/1377)|[1377](./solutions/1377.cpp)|
-|194|[Shortening Sequence](http://www.hihocoder.com/problemset/problem/1399)|[1399](./solutions/1399.cpp)|
-|195|[Five in a Row](http://www.hihocoder.com/problemset/problem/1404)|[1404](./solutions/1404.cpp)|
-|196|[Building Heap](http://www.hihocoder.com/problemset/problem/1405)|[1405](./solutions/1405.cpp)|
-|197|[The Lastest Time](http://www.hihocoder.com/problemset/problem/1408)|[1408](./solutions/1408.cpp)|
-|198|[Smallest Sub Array](http://www.hihocoder.com/problemset/problem/1409)|[1409](./solutions/1409.cpp)|
-|199|[Inventory is Full](http://www.hihocoder.com/problemset/problem/1416)|[1416](./solutions/1416.cpp)|
-|200|[Total Hamming Distance](http://www.hihocoder.com/problemset/problem/1417)|[1417](./solutions/1417.cpp)|
-|201|[Target Sum](http://www.hihocoder.com/problemset/problem/1418)|[1418](./solutions/1418.cpp)|
-|202|[Bigint Multiplication](http://www.hihocoder.com/problemset/problem/1420)|[1420](./solutions/1420.cpp)|
-|203|[Boarding Passes](http://www.hihocoder.com/problemset/problem/1433)|[1433](./solutions/1433.cpp)|
-|204|[Sorting Photo Files](http://www.hihocoder.com/problemset/problem/1434)|[1434](./solutions/1434.cpp)|
-|205|[Gas Stations](http://www.hihocoder.com/problemset/problem/1438)|[1438](./solutions/1438.cpp)|
-|206|[后缀自动机一·基本概念](http://www.hihocoder.com/problemset/problem/1441)|[1441](./solutions/1441.cpp)|
-|207|[Smallest Rectangle](http://www.hihocoder.com/problemset/problem/1442)|[1442](./solutions/1442.cpp)|
-|208|[Push Button I](http://www.hihocoder.com/problemset/problem/1443)|[1443](./solutions/1443.cpp)|
-|209|[后缀自动机二·重复旋律5](http://www.hihocoder.com/problemset/problem/1445)|[1445](./solutions/1445.cpp)|
-|210|[Big Plus](http://www.hihocoder.com/problemset/problem/1446)|[1446](./solutions/1446.cpp)|
-|211|[Interval Coverage](http://www.hihocoder.com/problemset/problem/1447)|[1447](./solutions/1447.cpp)|
-|212|[Split Array](http://www.hihocoder.com/problemset/problem/1448)|[1448](./solutions/1448.cpp)|
-|213|[后缀自动机三·重复旋律6](http://www.hihocoder.com/problemset/problem/1449)|[1449](./solutions/1449.cpp)|
-|214|[Inside Triangle](http://www.hihocoder.com/problemset/problem/1450)|[1450](./solutions/1450.cpp)|
-|215|[Ctrl-C Ctrl-V](http://www.hihocoder.com/problemset/problem/1451)|[1451](./solutions/1451.cpp)|
-|216|[后缀自动机四·重复旋律7](http://www.hihocoder.com/problemset/problem/1457)|[1457](./solutions/1457.cpp)|
-|217|[Parentheses Matching](http://www.hihocoder.com/problemset/problem/1458)|[1458](./solutions/1458.cpp)|
-|218|[Same Letters In A Row](http://www.hihocoder.com/problemset/problem/1459)|[1459](./solutions/1459.cpp)|
-|219|[后缀自动机五·重复旋律8](http://www.hihocoder.com/problemset/problem/1465)|[1465](./solutions/1465.cpp)|
-|220|[后缀自动机六·重复旋律9](http://www.hihocoder.com/problemset/problem/1466)|[1466](./solutions/1466.cpp)|
-|221|[2-SAT·hihoCoder音乐节](http://www.hihocoder.com/problemset/problem/1467)|[1467](./solutions/1467.cpp)|
-|222|[2-SAT·hihoCoder新春晚会](http://www.hihocoder.com/problemset/problem/1468)|[1468](./solutions/1468.cpp)|
-|223|[小Ho的强迫症](http://www.hihocoder.com/problemset/problem/1473)|[1473](./solutions/1473.cpp)|
-|224|[拆字游戏](http://www.hihocoder.com/problemset/problem/1474)|[1474](./solutions/1474.cpp)|
-|225|[闰秒](http://www.hihocoder.com/problemset/problem/1477)|[1477](./solutions/1477.cpp)|
-|226|[水陆距离](http://www.hihocoder.com/problemset/problem/1478)|[1478](./solutions/1478.cpp)|
-|227|[出勤记录I](http://www.hihocoder.com/problemset/problem/1481)|[1481](./solutions/1481.cpp)|
-|228|[出勤记录II](http://www.hihocoder.com/problemset/problem/1482)|[1482](./solutions/1482.cpp)|
-|229|[hiho字符串](http://www.hihocoder.com/problemset/problem/1485)|[1485](./solutions/1485.cpp)|
-|230|[物品价值](http://www.hihocoder.com/problemset/problem/1486)|[1486](./solutions/1486.cpp)|
-|231|[岛屿3](http://www.hihocoder.com/problemset/problem/1487)|[1487](./solutions/1487.cpp)|
-|232|[Legendary Items](http://www.hihocoder.com/problemset/problem/1489)|[1489](./solutions/1489.cpp)|
-|233|[Tree Restoration](http://www.hihocoder.com/problemset/problem/1490)|[1490](./solutions/1490.cpp)|
-|234|[歌德巴赫猜想](http://www.hihocoder.com/problemset/problem/1493)|[1493](./solutions/1493.cpp)|
-|235|[一面砖墙](http://www.hihocoder.com/problemset/problem/1494)|[1494](./solutions/1494.cpp)|
-|236|[矩形分割](http://www.hihocoder.com/problemset/problem/1495)|[1495](./solutions/1495.cpp)|
-|237|[Queen Attack](http://www.hihocoder.com/problemset/problem/1497)|[1497](./solutions/1497.cpp)|
-|238|[Diligent Robots](http://www.hihocoder.com/problemset/problem/1498)|[1498](./solutions/1498.cpp)|
-|239|[风格不统一如何写程序](http://www.hihocoder.com/problemset/problem/1501)|[1501](./solutions/1501.cpp)|
-|240|[最大子矩阵](http://www.hihocoder.com/problemset/problem/1502)|[1502](./solutions/1502.cpp)|
-|241|[小Hi和小Ho的礼物](http://www.hihocoder.com/problemset/problem/1505)|[1505](./solutions/1505.cpp)|
-|242|[投掷硬币](http://www.hihocoder.com/problemset/problem/1506)|[1506](./solutions/1506.cpp)|
-|243|[可疑的记录](http://www.hihocoder.com/problemset/problem/1507)|[1507](./solutions/1507.cpp)|
-|244|[XOR Sorting](http://www.hihocoder.com/problemset/problem/1509)|[1509](./solutions/1509.cpp)|
-|245|[小Hi的烦恼](http://www.hihocoder.com/problemset/problem/1513)|[1513](./solutions/1513.cpp)|
-|246|[偶像的条件](http://www.hihocoder.com/problemset/problem/1514)|[1514](./solutions/1514.cpp)|
-|247|[最大集合](http://www.hihocoder.com/problemset/problem/1518)|[1518](./solutions/1518.cpp)|
-|248|[逃离迷宫II](http://www.hihocoder.com/problemset/problem/1519)|[1519](./solutions/1519.cpp)|
-|249|[矩阵游戏](http://www.hihocoder.com/problemset/problem/1521)|[1521](./solutions/1521.cpp)|
-|250|[逆序对](http://www.hihocoder.com/problemset/problem/1524)|[1524](./solutions/1524.cpp)|
-|251|[逃离迷宫3](http://www.hihocoder.com/problemset/problem/1525)|[1525](./solutions/1525.cpp)|
-|252|[分数取模](http://www.hihocoder.com/problemset/problem/1530)|[1530](./solutions/1530.cpp)|
-|253|[Array Partition](http://www.hihocoder.com/problemset/problem/1534)|[1534](./solutions/1534.cpp)|
-|254|[MSFT](http://www.hihocoder.com/problemset/problem/1535)|[1535](./solutions/1535.cpp)|
-|255|[大礼堂地毯](http://www.hihocoder.com/problemset/problem/1538)|[1538](./solutions/1538.cpp)|
-|256|[数组重排3](http://www.hihocoder.com/problemset/problem/1539)|[1539](./solutions/1539.cpp)|
-|257|[无根数变有根树](http://www.hihocoder.com/problemset/problem/1542)|[1542](./solutions/1542.cpp)|
-|258|[SCI表示法](http://www.hihocoder.com/problemset/problem/1543)|[1543](./solutions/1543.cpp)|
-|259|[集合计数](http://www.hihocoder.com/problemset/problem/1546)|[1546](./solutions/1546.cpp)|
-|260|[迷宫探索](http://www.hihocoder.com/problemset/problem/1547)|[1547](./solutions/1547.cpp)|
-|261|[顺序三元组](http://www.hihocoder.com/problemset/problem/1550)|[1550](./solutions/1550.cpp)|
-|262|[统计子目录](http://www.hihocoder.com/problemset/problem/1551)|[1551](./solutions/1551.cpp)|
-|263|[H国的身份证号码I](http://www.hihocoder.com/problemset/problem/1558)|[1558](./solutions/1558.cpp)|
-|264|[合并子目录](http://www.hihocoder.com/problemset/problem/1559)|[1559](./solutions/1559.cpp)|
-|265|[小Hi的钟表](http://www.hihocoder.com/problemset/problem/1562)|[1562](./solutions/1562.cpp)|
-|266|[影院座位](http://www.hihocoder.com/problemset/problem/1563)|[1563](./solutions/1563.cpp)|
-|267|[皇室成员的名字](http://www.hihocoder.com/problemset/problem/1566)|[1566](./solutions/1566.cpp)|
-|268|[偶树的切分](http://www.hihocoder.com/problemset/problem/1567)|[1567](./solutions/1567.cpp)|
-|269|[小Hi与法阵](http://www.hihocoder.com/problemset/problem/1570)|[1570](./solutions/1570.cpp)|
-|270|[小Hi与钢铁侠](http://www.hihocoder.com/problemset/problem/1571)|[1571](./solutions/1571.cpp)|
-|271|[元素魔法](http://www.hihocoder.com/problemset/problem/1574)|[1574](./solutions/1574.cpp)|
-|272|[两个机器人](http://www.hihocoder.com/problemset/problem/1575)|[1575](./solutions/1575.cpp)|
-|273|[子树中的最小权值](http://www.hihocoder.com/problemset/problem/1576)|[1576](./solutions/1576.cpp)|
-|274|[The Next Moment](http://www.hihocoder.com/problemset/problem/1588)|[1588](./solutions/1588.cpp)|
-|275|[回文子串的数量](http://www.hihocoder.com/problemset/problem/1589)|[1589](./solutions/1589.cpp)|
-|276|[逃离迷宫4](http://www.hihocoder.com/problemset/problem/1599)|[1599](./solutions/1599.cpp)|
-|277|[本质不同的回文子串的数量](http://www.hihocoder.com/problemset/problem/1602)|[1602](./solutions/1602.cpp)|
-|278|[提取用户名](http://www.hihocoder.com/problemset/problem/1603)|[1603](./solutions/1603.cpp)|
-|279|[股票价格II](http://www.hihocoder.com/problemset/problem/1604)|[1604](./solutions/1604.cpp)|
-|280|[H星人社交网络](http://www.hihocoder.com/problemset/problem/1607)|[1607](./solutions/1607.cpp)|
-|281|[Jerry的奶酪](http://www.hihocoder.com/problemset/problem/1608)|[1608](./solutions/1608.cpp)|
-|282|[气泡图](http://www.hihocoder.com/problemset/problem/1611)|[1611](./solutions/1611.cpp)|
-|283|[候选人追踪](http://www.hihocoder.com/problemset/problem/1612)|[1612](./solutions/1612.cpp)|
-|284|[是二叉搜索树吗？](http://www.hihocoder.com/problemset/problem/1616)|[1616](./solutions/1616.cpp)|
-|285|[“共同富裕”](http://www.hihocoder.com/problemset/problem/1619)|[1619](./solutions/1619.cpp)|
-|286|[缩写命名](http://www.hihocoder.com/problemset/problem/1626)|[1626](./solutions/1626.cpp)|
-|287|[逃离单身节](http://www.hihocoder.com/problemset/problem/1637)|[1637](./solutions/1637.cpp)|
-|288|[小Hi的天平](http://www.hihocoder.com/problemset/problem/1638)|[1638](./solutions/1638.cpp)|
-|289|[最少换乘](http://www.hihocoder.com/problemset/problem/1643)|[1643](./solutions/1643.cpp)|
-|290|[完美命名的烦恼](http://www.hihocoder.com/problemset/problem/1644)|[1644](./solutions/1644.cpp)|
-|291|[三角形面积和2](http://www.hihocoder.com/problemset/problem/1652)|[1652](./solutions/1652.cpp)|
-|292|[XY游戏](http://www.hihocoder.com/problemset/problem/1654)|[1654](./solutions/1654.cpp)|
-|293|[比赛日程安排](http://www.hihocoder.com/problemset/problem/1670)|[1670](./solutions/1670.cpp)|
-|294|[反转子串](http://www.hihocoder.com/problemset/problem/1671)|[1671](./solutions/1671.cpp)|
-|295|[区间问题](http://www.hihocoder.com/problemset/problem/1672)|[1672](./solutions/1672.cpp)|
-|296|[01间隔矩阵](http://www.hihocoder.com/problemset/problem/1673)|[1673](./solutions/1673.cpp)|
-|297|[翻转字符串](http://www.hihocoder.com/problemset/problem/1677)|[1677](./solutions/1677.cpp)|
-|298|[版本号排序](http://www.hihocoder.com/problemset/problem/1678)|[1678](./solutions/1678.cpp)|
-|299|[自底向上遍历二叉树](http://www.hihocoder.com/problemset/problem/1679)|[1679](./solutions/1679.cpp)|
-|300|[hiho字符串2](http://www.hihocoder.com/problemset/problem/1680)|[1680](./solutions/1680.cpp)|
-|301|[最长多数子串](http://www.hihocoder.com/problemset/problem/1681)|[1681](./solutions/1681.cpp)|
-|302|[切分短信](http://www.hihocoder.com/problemset/problem/1683)|[1683](./solutions/1683.cpp)|
-|303|[最大子矩阵2](http://www.hihocoder.com/problemset/problem/1685)|[1685](./solutions/1685.cpp)|
-|304|[推断大小关系](http://www.hihocoder.com/problemset/problem/1689)|[1689](./solutions/1689.cpp)|
+|151|[Demo Day](http://www.hihocoder.com/problemset/problem/1290)|[1290](./solutions/1290.cpp)|
+|152|[Building in Sandbox](http://www.hihocoder.com/problemset/problem/1291)|[1291](./solutions/1291.cpp)|
+|153|[数论二·Eular质数筛法](http://www.hihocoder.com/problemset/problem/1295)|[1295](./solutions/1295.cpp)|
+|154|[数论三·约瑟夫问题](http://www.hihocoder.com/problemset/problem/1296)|[1296](./solutions/1296.cpp)|
+|155|[数论四·扩展欧几里德](http://www.hihocoder.com/problemset/problem/1297)|[1297](./solutions/1297.cpp)|
+|156|[数论五·欧拉函数](http://www.hihocoder.com/problemset/problem/1298)|[1298](./solutions/1298.cpp)|
+|157|[Cheap Ticket](http://www.hihocoder.com/problemset/problem/1299)|[1299](./solutions/1299.cpp)|
+|158|[搜索一·24点](http://www.hihocoder.com/problemset/problem/1304)|[1304](./solutions/1304.cpp)|
+|159|[Difference of Interval Collections](http://www.hihocoder.com/problemset/problem/1305)|[1305](./solutions/1305.cpp)|
+|160|[Stock Prices](http://www.hihocoder.com/problemset/problem/1306)|[1306](./solutions/1306.cpp)|
+|161|[Crossing Restricted Zone](http://www.hihocoder.com/problemset/problem/1307)|[1307](./solutions/1307.cpp)|
+|162|[搜索二·骑士问题](http://www.hihocoder.com/problemset/problem/1308)|[1308](./solutions/1308.cpp)|
+|163|[Task Distribution](http://www.hihocoder.com/problemset/problem/1309)|[1309](./solutions/1309.cpp)|
+|164|[Counting Islands](http://www.hihocoder.com/problemset/problem/1310)|[1310](./solutions/1310.cpp)|
+|165|[Binary Fractions](http://www.hihocoder.com/problemset/problem/1311)|[1311](./solutions/1311.cpp)|
+|166|[搜索三·启发式搜索](http://www.hihocoder.com/problemset/problem/1312)|[1312](./solutions/1312.cpp)|
+|167|[Treasure Boxes](http://www.hihocoder.com/problemset/problem/1313)|[1313](./solutions/1313.cpp)|
+|168|[Longest Non-Decreasing Subsequence](http://www.hihocoder.com/problemset/problem/1314)|[1314](./solutions/1314.cpp)|
+|169|[搜索四·跳舞链](http://www.hihocoder.com/problemset/problem/1317)|[1317](./solutions/1317.cpp)|
+|170|[Invalid Binary Numbers](http://www.hihocoder.com/problemset/problem/1318)|[1318](./solutions/1318.cpp)|
+|171|[Region Perimeter](http://www.hihocoder.com/problemset/problem/1319)|[1319](./solutions/1319.cpp)|
+|172|[String Folding](http://www.hihocoder.com/problemset/problem/1320)|[1320](./solutions/1320.cpp)|
+|173|[Tree or Not](http://www.hihocoder.com/problemset/problem/1322)|[1322](./solutions/1322.cpp)|
+|174|[Making Palindrome](http://www.hihocoder.com/problemset/problem/1323)|[1323](./solutions/1323.cpp)|
+|175|[Hilbert Curve](http://www.hihocoder.com/problemset/problem/1324)|[1324](./solutions/1324.cpp)|
+|176|[平衡树·Treap](http://www.hihocoder.com/problemset/problem/1325)|[1325](./solutions/1325.cpp)|
+|177|[Ordered Binary String](http://www.hihocoder.com/problemset/problem/1326)|[1326](./solutions/1326.cpp)|
+|178|[Separating Same Characters](http://www.hihocoder.com/problemset/problem/1327)|[1327](./solutions/1327.cpp)|
+|179|[Maze Escape](http://www.hihocoder.com/problemset/problem/1328)|[1328](./solutions/1328.cpp)|
+|180|[平衡树·Splay](http://www.hihocoder.com/problemset/problem/1329)|[1329](./solutions/1329.cpp)|
+|181|[Array Rearrangement](http://www.hihocoder.com/problemset/problem/1330)|[1330](./solutions/1330.cpp)|
+|182|[Biinary Numbers](http://www.hihocoder.com/problemset/problem/1331)|[1331](./solutions/1331.cpp)|
+|183|[Basic Arithmetic Calculator](http://www.hihocoder.com/problemset/problem/1332)|[1332](./solutions/1332.cpp)|
+|184|[平衡树·Splay2](http://www.hihocoder.com/problemset/problem/1333)|[1333](./solutions/1333.cpp)|
+|185|[Word Construction](http://www.hihocoder.com/problemset/problem/1334)|[1334](./solutions/1334.cpp)|
+|186|[Email Merge](http://www.hihocoder.com/problemset/problem/1335)|[1335](./solutions/1335.cpp)|
+|187|[Matrix Sum](http://www.hihocoder.com/problemset/problem/1336)|[1336](./solutions/1336.cpp)|
+|188|[A Game](http://www.hihocoder.com/problemset/problem/1338)|[1338](./solutions/1338.cpp)|
+|189|[Dice Possibility](http://www.hihocoder.com/problemset/problem/1339)|[1339](./solutions/1339.cpp)|
+|190|[Robots Crossing River](http://www.hihocoder.com/problemset/problem/1340)|[1340](./solutions/1340.cpp)|
+|191|[Constraint Checker](http://www.hihocoder.com/problemset/problem/1341)|[1341](./solutions/1341.cpp)|
+|192|[Full Binary Tree Picture](http://www.hihocoder.com/problemset/problem/1342)|[1342](./solutions/1342.cpp)|
+|193|[Stable Members](http://www.hihocoder.com/problemset/problem/1343)|[1343](./solutions/1343.cpp)|
+|194|[Part-Time Jobs](http://www.hihocoder.com/problemset/problem/1344)|[1344](./solutions/1344.cpp)|
+|195|[Nature Numbers](http://www.hihocoder.com/problemset/problem/1349)|[1349](./solutions/1349.cpp)|
+|196|[Binary Watch](http://www.hihocoder.com/problemset/problem/1350)|[1350](./solutions/1350.cpp)|
+|197|[Popular Products](http://www.hihocoder.com/problemset/problem/1351)|[1351](./solutions/1351.cpp)|
+|198|[Counting Islands II](http://www.hihocoder.com/problemset/problem/1352)|[1352](./solutions/1352.cpp)|
+|199|[满减优惠](http://www.hihocoder.com/problemset/problem/1353)|[1353](./solutions/1353.cpp)|
+|200|[积水的城市](http://www.hihocoder.com/problemset/problem/1354)|[1354](./solutions/1354.cpp)|
+|201|[分隔相同整数](http://www.hihocoder.com/problemset/problem/1356)|[1356](./solutions/1356.cpp)|
+|202|[小Ho的防护盾](http://www.hihocoder.com/problemset/problem/1357)|[1357](./solutions/1357.cpp)|
+|203|[小P的强力值](http://www.hihocoder.com/problemset/problem/1358)|[1358](./solutions/1358.cpp)|
+|204|[震荡数组](http://www.hihocoder.com/problemset/problem/1359)|[1359](./solutions/1359.cpp)|
+|205|[Playfair密码表](http://www.hihocoder.com/problemset/problem/1361)|[1361](./solutions/1361.cpp)|
+|206|[修补木桶](http://www.hihocoder.com/problemset/problem/1362)|[1362](./solutions/1362.cpp)|
+|207|[图像算子](http://www.hihocoder.com/problemset/problem/1363)|[1363](./solutions/1363.cpp)|
+|208|[图片排版](http://www.hihocoder.com/problemset/problem/1365)|[1365](./solutions/1365.cpp)|
+|209|[逆序单词](http://www.hihocoder.com/problemset/problem/1366)|[1366](./solutions/1366.cpp)|
+|210|[快乐数字](http://www.hihocoder.com/problemset/problem/1370)|[1370](./solutions/1370.cpp)|
+|211|[翻转链表](http://www.hihocoder.com/problemset/problem/1371)|[1371](./solutions/1371.cpp)|
+|212|[平方求和](http://www.hihocoder.com/problemset/problem/1372)|[1372](./solutions/1372.cpp)|
+|213|[沙漠之旅](http://www.hihocoder.com/problemset/problem/1375)|[1375](./solutions/1375.cpp)|
+|214|[数组去重](http://www.hihocoder.com/problemset/problem/1376)|[1376](./solutions/1376.cpp)|
+|215|[设计LRU Cache](http://www.hihocoder.com/problemset/problem/1377)|[1377](./solutions/1377.cpp)|
+|216|[Shortening Sequence](http://www.hihocoder.com/problemset/problem/1399)|[1399](./solutions/1399.cpp)|
+|217|[Five in a Row](http://www.hihocoder.com/problemset/problem/1404)|[1404](./solutions/1404.cpp)|
+|218|[Building Heap](http://www.hihocoder.com/problemset/problem/1405)|[1405](./solutions/1405.cpp)|
+|219|[The Lastest Time](http://www.hihocoder.com/problemset/problem/1408)|[1408](./solutions/1408.cpp)|
+|220|[Smallest Sub Array](http://www.hihocoder.com/problemset/problem/1409)|[1409](./solutions/1409.cpp)|
+|221|[Inventory is Full](http://www.hihocoder.com/problemset/problem/1416)|[1416](./solutions/1416.cpp)|
+|222|[Total Hamming Distance](http://www.hihocoder.com/problemset/problem/1417)|[1417](./solutions/1417.cpp)|
+|223|[Target Sum](http://www.hihocoder.com/problemset/problem/1418)|[1418](./solutions/1418.cpp)|
+|224|[Bigint Multiplication](http://www.hihocoder.com/problemset/problem/1420)|[1420](./solutions/1420.cpp)|
+|225|[Boarding Passes](http://www.hihocoder.com/problemset/problem/1433)|[1433](./solutions/1433.cpp)|
+|226|[Sorting Photo Files](http://www.hihocoder.com/problemset/problem/1434)|[1434](./solutions/1434.cpp)|
+|227|[Gas Stations](http://www.hihocoder.com/problemset/problem/1438)|[1438](./solutions/1438.cpp)|
+|228|[后缀自动机一·基本概念](http://www.hihocoder.com/problemset/problem/1441)|[1441](./solutions/1441.cpp)|
+|229|[Smallest Rectangle](http://www.hihocoder.com/problemset/problem/1442)|[1442](./solutions/1442.cpp)|
+|230|[Push Button I](http://www.hihocoder.com/problemset/problem/1443)|[1443](./solutions/1443.cpp)|
+|231|[后缀自动机二·重复旋律5](http://www.hihocoder.com/problemset/problem/1445)|[1445](./solutions/1445.cpp)|
+|232|[Big Plus](http://www.hihocoder.com/problemset/problem/1446)|[1446](./solutions/1446.cpp)|
+|233|[Interval Coverage](http://www.hihocoder.com/problemset/problem/1447)|[1447](./solutions/1447.cpp)|
+|234|[Split Array](http://www.hihocoder.com/problemset/problem/1448)|[1448](./solutions/1448.cpp)|
+|235|[后缀自动机三·重复旋律6](http://www.hihocoder.com/problemset/problem/1449)|[1449](./solutions/1449.cpp)|
+|236|[Inside Triangle](http://www.hihocoder.com/problemset/problem/1450)|[1450](./solutions/1450.cpp)|
+|237|[Ctrl-C Ctrl-V](http://www.hihocoder.com/problemset/problem/1451)|[1451](./solutions/1451.cpp)|
+|238|[后缀自动机四·重复旋律7](http://www.hihocoder.com/problemset/problem/1457)|[1457](./solutions/1457.cpp)|
+|239|[Parentheses Matching](http://www.hihocoder.com/problemset/problem/1458)|[1458](./solutions/1458.cpp)|
+|240|[Same Letters In A Row](http://www.hihocoder.com/problemset/problem/1459)|[1459](./solutions/1459.cpp)|
+|241|[后缀自动机五·重复旋律8](http://www.hihocoder.com/problemset/problem/1465)|[1465](./solutions/1465.cpp)|
+|242|[后缀自动机六·重复旋律9](http://www.hihocoder.com/problemset/problem/1466)|[1466](./solutions/1466.cpp)|
+|243|[2-SAT·hihoCoder音乐节](http://www.hihocoder.com/problemset/problem/1467)|[1467](./solutions/1467.cpp)|
+|244|[2-SAT·hihoCoder新春晚会](http://www.hihocoder.com/problemset/problem/1468)|[1468](./solutions/1468.cpp)|
+|245|[小Ho的强迫症](http://www.hihocoder.com/problemset/problem/1473)|[1473](./solutions/1473.cpp)|
+|246|[拆字游戏](http://www.hihocoder.com/problemset/problem/1474)|[1474](./solutions/1474.cpp)|
+|247|[闰秒](http://www.hihocoder.com/problemset/problem/1477)|[1477](./solutions/1477.cpp)|
+|248|[水陆距离](http://www.hihocoder.com/problemset/problem/1478)|[1478](./solutions/1478.cpp)|
+|249|[出勤记录I](http://www.hihocoder.com/problemset/problem/1481)|[1481](./solutions/1481.cpp)|
+|250|[出勤记录II](http://www.hihocoder.com/problemset/problem/1482)|[1482](./solutions/1482.cpp)|
+|251|[hiho字符串](http://www.hihocoder.com/problemset/problem/1485)|[1485](./solutions/1485.cpp)|
+|252|[物品价值](http://www.hihocoder.com/problemset/problem/1486)|[1486](./solutions/1486.cpp)|
+|253|[岛屿3](http://www.hihocoder.com/problemset/problem/1487)|[1487](./solutions/1487.cpp)|
+|254|[Legendary Items](http://www.hihocoder.com/problemset/problem/1489)|[1489](./solutions/1489.cpp)|
+|255|[Tree Restoration](http://www.hihocoder.com/problemset/problem/1490)|[1490](./solutions/1490.cpp)|
+|256|[歌德巴赫猜想](http://www.hihocoder.com/problemset/problem/1493)|[1493](./solutions/1493.cpp)|
+|257|[一面砖墙](http://www.hihocoder.com/problemset/problem/1494)|[1494](./solutions/1494.cpp)|
+|258|[矩形分割](http://www.hihocoder.com/problemset/problem/1495)|[1495](./solutions/1495.cpp)|
+|259|[Queen Attack](http://www.hihocoder.com/problemset/problem/1497)|[1497](./solutions/1497.cpp)|
+|260|[Diligent Robots](http://www.hihocoder.com/problemset/problem/1498)|[1498](./solutions/1498.cpp)|
+|261|[风格不统一如何写程序](http://www.hihocoder.com/problemset/problem/1501)|[1501](./solutions/1501.cpp)|
+|262|[最大子矩阵](http://www.hihocoder.com/problemset/problem/1502)|[1502](./solutions/1502.cpp)|
+|263|[小Hi和小Ho的礼物](http://www.hihocoder.com/problemset/problem/1505)|[1505](./solutions/1505.cpp)|
+|264|[投掷硬币](http://www.hihocoder.com/problemset/problem/1506)|[1506](./solutions/1506.cpp)|
+|265|[可疑的记录](http://www.hihocoder.com/problemset/problem/1507)|[1507](./solutions/1507.cpp)|
+|266|[XOR Sorting](http://www.hihocoder.com/problemset/problem/1509)|[1509](./solutions/1509.cpp)|
+|267|[小Hi的烦恼](http://www.hihocoder.com/problemset/problem/1513)|[1513](./solutions/1513.cpp)|
+|268|[偶像的条件](http://www.hihocoder.com/problemset/problem/1514)|[1514](./solutions/1514.cpp)|
+|269|[最大集合](http://www.hihocoder.com/problemset/problem/1518)|[1518](./solutions/1518.cpp)|
+|270|[逃离迷宫II](http://www.hihocoder.com/problemset/problem/1519)|[1519](./solutions/1519.cpp)|
+|271|[矩阵游戏](http://www.hihocoder.com/problemset/problem/1521)|[1521](./solutions/1521.cpp)|
+|272|[逆序对](http://www.hihocoder.com/problemset/problem/1524)|[1524](./solutions/1524.cpp)|
+|273|[逃离迷宫3](http://www.hihocoder.com/problemset/problem/1525)|[1525](./solutions/1525.cpp)|
+|274|[分数取模](http://www.hihocoder.com/problemset/problem/1530)|[1530](./solutions/1530.cpp)|
+|275|[Array Partition](http://www.hihocoder.com/problemset/problem/1534)|[1534](./solutions/1534.cpp)|
+|276|[MSFT](http://www.hihocoder.com/problemset/problem/1535)|[1535](./solutions/1535.cpp)|
+|277|[大礼堂地毯](http://www.hihocoder.com/problemset/problem/1538)|[1538](./solutions/1538.cpp)|
+|278|[数组重排3](http://www.hihocoder.com/problemset/problem/1539)|[1539](./solutions/1539.cpp)|
+|279|[无根数变有根树](http://www.hihocoder.com/problemset/problem/1542)|[1542](./solutions/1542.cpp)|
+|280|[SCI表示法](http://www.hihocoder.com/problemset/problem/1543)|[1543](./solutions/1543.cpp)|
+|281|[集合计数](http://www.hihocoder.com/problemset/problem/1546)|[1546](./solutions/1546.cpp)|
+|282|[迷宫探索](http://www.hihocoder.com/problemset/problem/1547)|[1547](./solutions/1547.cpp)|
+|283|[顺序三元组](http://www.hihocoder.com/problemset/problem/1550)|[1550](./solutions/1550.cpp)|
+|284|[统计子目录](http://www.hihocoder.com/problemset/problem/1551)|[1551](./solutions/1551.cpp)|
+|285|[H国的身份证号码I](http://www.hihocoder.com/problemset/problem/1558)|[1558](./solutions/1558.cpp)|
+|286|[合并子目录](http://www.hihocoder.com/problemset/problem/1559)|[1559](./solutions/1559.cpp)|
+|287|[小Hi的钟表](http://www.hihocoder.com/problemset/problem/1562)|[1562](./solutions/1562.cpp)|
+|288|[影院座位](http://www.hihocoder.com/problemset/problem/1563)|[1563](./solutions/1563.cpp)|
+|289|[皇室成员的名字](http://www.hihocoder.com/problemset/problem/1566)|[1566](./solutions/1566.cpp)|
+|290|[偶树的切分](http://www.hihocoder.com/problemset/problem/1567)|[1567](./solutions/1567.cpp)|
+|291|[小Hi与法阵](http://www.hihocoder.com/problemset/problem/1570)|[1570](./solutions/1570.cpp)|
+|292|[小Hi与钢铁侠](http://www.hihocoder.com/problemset/problem/1571)|[1571](./solutions/1571.cpp)|
+|293|[元素魔法](http://www.hihocoder.com/problemset/problem/1574)|[1574](./solutions/1574.cpp)|
+|294|[两个机器人](http://www.hihocoder.com/problemset/problem/1575)|[1575](./solutions/1575.cpp)|
+|295|[子树中的最小权值](http://www.hihocoder.com/problemset/problem/1576)|[1576](./solutions/1576.cpp)|
+|296|[The Next Moment](http://www.hihocoder.com/problemset/problem/1588)|[1588](./solutions/1588.cpp)|
+|297|[回文子串的数量](http://www.hihocoder.com/problemset/problem/1589)|[1589](./solutions/1589.cpp)|
+|298|[逃离迷宫4](http://www.hihocoder.com/problemset/problem/1599)|[1599](./solutions/1599.cpp)|
+|299|[本质不同的回文子串的数量](http://www.hihocoder.com/problemset/problem/1602)|[1602](./solutions/1602.cpp)|
+|300|[提取用户名](http://www.hihocoder.com/problemset/problem/1603)|[1603](./solutions/1603.cpp)|
+|301|[股票价格II](http://www.hihocoder.com/problemset/problem/1604)|[1604](./solutions/1604.cpp)|
+|302|[H星人社交网络](http://www.hihocoder.com/problemset/problem/1607)|[1607](./solutions/1607.cpp)|
+|303|[Jerry的奶酪](http://www.hihocoder.com/problemset/problem/1608)|[1608](./solutions/1608.cpp)|
+|304|[气泡图](http://www.hihocoder.com/problemset/problem/1611)|[1611](./solutions/1611.cpp)|
+|305|[候选人追踪](http://www.hihocoder.com/problemset/problem/1612)|[1612](./solutions/1612.cpp)|
+|306|[是二叉搜索树吗？](http://www.hihocoder.com/problemset/problem/1616)|[1616](./solutions/1616.cpp)|
+|307|[“共同富裕”](http://www.hihocoder.com/problemset/problem/1619)|[1619](./solutions/1619.cpp)|
+|308|[有歧义的号码](http://www.hihocoder.com/problemset/problem/1623)|[1623](./solutions/1623.cpp)|
+|309|[最短游览路线](http://www.hihocoder.com/problemset/problem/1624)|[1624](./solutions/1624.cpp)|
+|310|[重复字符串匹配](http://www.hihocoder.com/problemset/problem/1625)|[1625](./solutions/1625.cpp)|
+|311|[缩写命名](http://www.hihocoder.com/problemset/problem/1626)|[1626](./solutions/1626.cpp)|
+|312|[逃离单身节](http://www.hihocoder.com/problemset/problem/1637)|[1637](./solutions/1637.cpp)|
+|313|[小Hi的天平](http://www.hihocoder.com/problemset/problem/1638)|[1638](./solutions/1638.cpp)|
+|314|[热门号码](http://www.hihocoder.com/problemset/problem/1641)|[1641](./solutions/1641.cpp)|
+|315|[三角形面积和](http://www.hihocoder.com/problemset/problem/1642)|[1642](./solutions/1642.cpp)|
+|316|[最少换乘](http://www.hihocoder.com/problemset/problem/1643)|[1643](./solutions/1643.cpp)|
+|317|[完美命名的烦恼](http://www.hihocoder.com/problemset/problem/1644)|[1644](./solutions/1644.cpp)|
+|318|[漏写的数字](http://www.hihocoder.com/problemset/problem/1649)|[1649](./solutions/1649.cpp)|
+|319|[扁平化管理](http://www.hihocoder.com/problemset/problem/1650)|[1650](./solutions/1650.cpp)|
+|320|[小球染色](http://www.hihocoder.com/problemset/problem/1651)|[1651](./solutions/1651.cpp)|
+|321|[三角形面积和2](http://www.hihocoder.com/problemset/problem/1652)|[1652](./solutions/1652.cpp)|
+|322|[XY游戏](http://www.hihocoder.com/problemset/problem/1654)|[1654](./solutions/1654.cpp)|
+|323|[查找三阶幻方](http://www.hihocoder.com/problemset/problem/1662)|[1662](./solutions/1662.cpp)|
+|324|[双阶乘的末尾数字](http://www.hihocoder.com/problemset/problem/1663)|[1663](./solutions/1663.cpp)|
+|325|[01间隔方阵](http://www.hihocoder.com/problemset/problem/1664)|[1664](./solutions/1664.cpp)|
+|326|[方块游戏](http://www.hihocoder.com/problemset/problem/1665)|[1665](./solutions/1665.cpp)|
+|327|[比赛日程安排](http://www.hihocoder.com/problemset/problem/1670)|[1670](./solutions/1670.cpp)|
+|328|[反转子串](http://www.hihocoder.com/problemset/problem/1671)|[1671](./solutions/1671.cpp)|
+|329|[区间问题](http://www.hihocoder.com/problemset/problem/1672)|[1672](./solutions/1672.cpp)|
+|330|[01间隔矩阵](http://www.hihocoder.com/problemset/problem/1673)|[1673](./solutions/1673.cpp)|
+|331|[对局匹配](http://www.hihocoder.com/problemset/problem/1674)|[1674](./solutions/1674.cpp)|
+|332|[稀疏矩阵乘积](http://www.hihocoder.com/problemset/problem/1675)|[1675](./solutions/1675.cpp)|
+|333|[树上的等差数列](http://www.hihocoder.com/problemset/problem/1676)|[1676](./solutions/1676.cpp)|
+|334|[翻转字符串](http://www.hihocoder.com/problemset/problem/1677)|[1677](./solutions/1677.cpp)|
+|335|[版本号排序](http://www.hihocoder.com/problemset/problem/1678)|[1678](./solutions/1678.cpp)|
+|336|[自底向上遍历二叉树](http://www.hihocoder.com/problemset/problem/1679)|[1679](./solutions/1679.cpp)|
+|337|[hiho字符串2](http://www.hihocoder.com/problemset/problem/1680)|[1680](./solutions/1680.cpp)|
+|338|[最长多数子串](http://www.hihocoder.com/problemset/problem/1681)|[1681](./solutions/1681.cpp)|
+|339|[扫雷游戏](http://www.hihocoder.com/problemset/problem/1682)|[1682](./solutions/1682.cpp)|
+|340|[切分短信](http://www.hihocoder.com/problemset/problem/1683)|[1683](./solutions/1683.cpp)|
+|341|[车队](http://www.hihocoder.com/problemset/problem/1684)|[1684](./solutions/1684.cpp)|
+|342|[最大子矩阵2](http://www.hihocoder.com/problemset/problem/1685)|[1685](./solutions/1685.cpp)|
+|343|[互补二元组](http://www.hihocoder.com/problemset/problem/1686)|[1686](./solutions/1686.cpp)|
+|344|[寻找切线](http://www.hihocoder.com/problemset/problem/1687)|[1687](./solutions/1687.cpp)|
+|345|[LR问题](http://www.hihocoder.com/problemset/problem/1688)|[1688](./solutions/1688.cpp)|
+|346|[推断大小关系](http://www.hihocoder.com/problemset/problem/1689)|[1689](./solutions/1689.cpp)|
