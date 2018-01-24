@@ -113,7 +113,7 @@ var gen_readme = function(){
   var gen_solution = function(){
     var title = "\n### Solutions\n";
     var head = "| # | Problem | Solution |";
-    var split = "|!-!|!-------!|!--------!|";
+    var split = "|:-:|:-------:|:--------:|";
     var body = "";
     problems.forEach(function(problem, idx){
       var pn = "[" + problem.name + "](" + host + problem.href + ")";
