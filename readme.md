@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 354&nbsp;|&nbsp;Submit: 1100&nbsp;|&nbsp;Hiho: 39&nbsp;|&nbsp;Contest: 32
+##### 拂柳残声&nbsp;|&nbsp;AC: 358&nbsp;|&nbsp;Submit: 1115&nbsp;|&nbsp;Hiho: 40&nbsp;|&nbsp;Contest: 32
 
 ### Features
 
@@ -373,3 +373,7 @@ node hiho.js # 即可生成readme.md
 |352|[寻找切线](http://www.hihocoder.com/problemset/problem/1687)|[1687](./solutions/1687.cpp)|
 |353|[LR问题](http://www.hihocoder.com/problemset/problem/1688)|[1688](./solutions/1688.cpp)|
 |354|[推断大小关系](http://www.hihocoder.com/problemset/problem/1689)|[1689](./solutions/1689.cpp)|
+|355|[AEIOU](http://www.hihocoder.com/problemset/problem/1690)|[1690](./solutions/1690.cpp)|
+|356|[数字游戏](http://www.hihocoder.com/problemset/problem/1691)|[1691](./solutions/1691.cpp)|
+|357|[第K小分数](http://www.hihocoder.com/problemset/problem/1692)|[1692](./solutions/1692.cpp)|
+|358|[逆序异或和](http://www.hihocoder.com/problemset/problem/1693)|[1693](./solutions/1693.cpp)|
