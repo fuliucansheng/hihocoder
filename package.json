@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/fuliucansheng/hihocoder#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2"
+    "cheerio": "^1.0.0-rc.2",
+    "eventproxy": "^1.0.0"
   }
 }

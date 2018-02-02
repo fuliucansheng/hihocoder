@@ -1,11 +1,11 @@
 var fs = require("fs")
+var eventproxy = require("eventproxy")
 var http = require("http")
 var cheerio = require("cheerio")
 
 var uid = 76193
 var host = "www.hihocoder.com"
 
-var problems = [];
 var get_problem = function(){
   var options = {
     hostname: host,
@@ -20,6 +20,7 @@ var get_problem = function(){
       domstr += r;
     })
     res.on("end", function(){
+      var problems = []
       var $ = cheerio.load(domstr);
       $("article").map(function(idx, problem){
         var plink = $(problem).find("h4 > a").attr("href");
@@ -34,7 +35,7 @@ var get_problem = function(){
       problems.sort(function(a,b){
         return a.id - b.id;
       })
-      gen_readme();
+      ep.emit("problems", problems)
     })
   })
 
@@ -45,7 +46,6 @@ var get_problem = function(){
   req.end();
 }
 
-var userinfo = {};
 var get_userinfo = function(){
   var options = {
     hostname: host,
@@ -60,6 +60,7 @@ var get_userinfo = function(){
       domstr += r;
     })
     res.on("end", function(){
+      var userinfo = {};
       var $ = cheerio.load(domstr);
       var username = $(".profile-header-summary > .name").text().trim();
       userinfo["name"] = username;
@@ -78,7 +79,7 @@ var get_userinfo = function(){
         var v = $(li).text().split("：")[1].trim();
         userinfo[dict[k]] = v;
       })
-      get_problem();
+      ep.emit("userinfo", userinfo)
     })
   })
 
@@ -89,7 +90,7 @@ var get_userinfo = function(){
   req.end();
 }
 
-var gen_readme = function(){
+var gen_readme = function(problems, userinfo){
   var gen_title = function(){
     return "\n# HihoCoder\n";
   }
@@ -141,4 +142,9 @@ var gen_readme = function(){
   })
 }
 
+get_problem()
 get_userinfo()
+
+var ep = new eventproxy();
+ep.all("problems", "userinfo", gen_readme)
+
