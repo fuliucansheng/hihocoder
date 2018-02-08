@@ -1,19 +1,17 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-ll a, b, p;
-ll g(ll bb, ll pp){
-    ll r = 0;
-    while(true){
-        if((r*pp+1)%bb == 0) return (r*pp+1)/bb;
-        r++;
-    }
+ll extend_gcd(ll a, ll b, ll& x, ll& y){
+    if(b == 0) return x = 1, y = 0, a;
+    ll d = extend_gcd(b, a%b, y, x);
+    y -= a/b * x;
+    return d;
 }
-int main(){
-    //freopen("../input.txt","r",stdin);
-    cin>>a>>b>>p;
-    ll bp = g(b, p);
-    cout<<(a*bp)%p<<endl;
+int main() {
+    //freopen("../input.txt", "r" , stdin);
+    ll a, b, p, x, y; cin>>a>>b>>p;
+    extend_gcd(b, p, x, y);
+    x = (x + (abs(x) / p + 1) * p) % p;
+    cout<<(a * x) % p<<endl;
     return 0;
 }
-
