@@ -11,6 +11,6 @@ int main() {
         if(c == 'o') dp[3]++;
         if(c == 'u') dp[4] = max(dp[3], dp[4]) + 1;
     }
-    cout<<dp[2]+dp[4]<<endl;
+    cout<<max({dp[0], dp[1], dp[2]})+max(dp[3], dp[4])<<endl;
     return 0;
 }
