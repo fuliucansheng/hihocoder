@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 400&nbsp;|&nbsp;Submit: 1208&nbsp;|&nbsp;Hiho: 43&nbsp;|&nbsp;Contest: 33
+##### 拂柳残声&nbsp;|&nbsp;AC: 400&nbsp;|&nbsp;Submit: 1209&nbsp;|&nbsp;Hiho: 43&nbsp;|&nbsp;Contest: 33
 
 ### Features
 
@@ -418,3 +418,4 @@ node hiho.js # 即可生成readme.md
 |397|[第K小分数](http://www.hihocoder.com/problemset/problem/1692)|[1692](./solutions/1692.cpp)|
 |398|[逆序异或和](http://www.hihocoder.com/problemset/problem/1693)|[1693](./solutions/1693.cpp)|
 |399|[删除树节点](http://www.hihocoder.com/problemset/problem/1694)|[1694](./solutions/1694.cpp)|
+|400|[公平分队II](http://www.hihocoder.com/problemset/problem/1695)|[1695](./solutions/1695.cpp)|
