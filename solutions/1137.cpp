@@ -1,7 +1,4 @@
-#include <iostream>
-#include <cstring>
-#include <vector>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
 const int maxb = 1050, maxn = 105;
 struct node{

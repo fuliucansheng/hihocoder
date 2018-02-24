@@ -1,7 +1,4 @@
-#include <iostream>
-#include <cstring>
-#include <algorithm>
-#include <queue>
+#include <bits/stdc++.h>
 using namespace std;
 #define d(i, j) min(abs(gnode[i].x - gnode[j].x),abs(gnode[i].y - gnode[j].y))
 const int maxn = 1e5+10;

@@ -16,7 +16,7 @@ struct op{
     int index;
 };
 int main() {
-    freopen("../input.txt","r",stdin);
+    //freopen("../input.txt","r",stdin);
     int n;cin>>n;
     int arr[n][n];
     for(int i=0;i<n;i++)

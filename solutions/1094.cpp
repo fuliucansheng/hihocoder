@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 const int maxn = 300;
 char graph[maxn][maxn], round[3][3];
