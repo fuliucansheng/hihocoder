@@ -1,7 +1,19 @@
+/******************************************************************************
+ **                Copyright (C) 2018, fuliucansheng. All Rights Reserved
+ **
+ **  FileName:   hiho.js
+ **  Desc:       generate readme
+ **  Author:     fuliucansheng
+ **  Email:      fuliucansheng@gmail.com
+ **  LastChange: 2018-02-24 21:49:56
+ **  History:    2018-02-24 Create by fuliucansheng
+ ******************************************************************************/
+
 var fs = require("fs")
-var eventproxy = require("eventproxy")
 var http = require("http")
+var async = require("async")
 var cheerio = require("cheerio")
+var eventproxy = require("eventproxy")
 
 var uid = 76193
 var host = "www.hihocoder.com"
@@ -43,7 +55,7 @@ var get_problem = function() {
     console.log('problem with request: ' + e.message);
   });
 
-  req.end();
+  return req.end();
 }
 
 var get_userinfo = function() {
@@ -87,7 +99,7 @@ var get_userinfo = function() {
     console.log('problem with request: ' + e.message);
   });
 
-  req.end();
+  return req.end();
 }
 
 var gen_readme = function(problems, userinfo) {
@@ -142,8 +154,7 @@ var gen_readme = function(problems, userinfo) {
   })
 }
 
-get_problem()
-get_userinfo()
+async.parallel([get_problem, get_userinfo])
 
 var ep = new eventproxy();
 ep.all("problems", "userinfo", gen_readme)
