@@ -1,32 +1,20 @@
-#include <iostream>
-#include <algorithm>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
-
+const int maxn = 100010;
+int arr[maxn];
 int main() {
     //freopen("../input.txt","r",stdin);
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++) cin>>arr[i];
-    int max = 0,count = 0,dictmax = 0;
-    set<int> dict;
-    while(true){
-        int ds = dict.size();
-        max = dictmax;
-        for(int i=0;i<n;i++){
-            if(dict.find(arr[i]) == dict.end()){
-                if(arr[i] > max){
-                    max = arr[i];
-                }else{
-                    count++;
-                    if(arr[i] > dictmax) dictmax = arr[i];
-                    dict.insert(arr[i]);
-                }
-            }
-        }
-        if(ds == dict.size()) break;
+    memset(arr, 0, sizeof(arr));
+    int n; cin>>n;
+    for(int i=1;i<=n;i++){
+        int x; cin>>x;
+        arr[x] = i;
     }
-    cout<<count<<endl;
+    bool status = false;
+    for(int i=n;i>0;i--) if(arr[i] < arr[i-1]) {
+            cout<<i-1<<endl, status = true;
+            break;
+        }
+    if(!status) cout<<0<<endl;
     return 0;
 }

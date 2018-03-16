@@ -1,11 +1,8 @@
-#include <iostream>
-#include <algorithm>
-#include <set>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
-typedef pair<int,int> ps;
-set<int> mon = {1,3,5,7,8,10,12};
-bool is_valid(ps a, ps b){
+typedef pair<int,int> pii;
+set<int> mon = {1, 3, 5, 7, 8, 10, 12};
+bool is_valid(pii a, pii b){
     if(a.first == b.first) return b.second - a.second > 1;
     if(b.first - a.first == 1){
         if(a.first == 2) return not (a.second == 28 && b.second == 1);
@@ -19,12 +16,12 @@ int main(){
     int t; cin>>t;
     while(t--){
         int m, n; cin>>n>>m;
-        vector<ps> rec[n+1];
+        vector<pii> rec[n+1];
         for(int i=0;i<m;i++){
             int a, b, mm, dd;
             string s; cin>>s>>a>>b;
             sscanf(s.c_str(), "%d-%d", &mm, &dd);
-            rec[a].push_back(ps(mm,dd )), rec[b].push_back(ps(mm, dd));
+            rec[a].push_back(pii(mm,dd )), rec[b].push_back(pii(mm, dd));
         }
         for(int i=1;i<=n;i++) sort(rec[i].begin(), rec[i].end());
         bool rs = true;

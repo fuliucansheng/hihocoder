@@ -1,66 +1,36 @@
-#include <iostream>
-#include <algorithm>
-#include <map>
-#include <set>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
-map<int,set<int>> dict;
-map<int,pair<int,int>> fdict;
-vector<int> visit;
-void dict2tree(int currnode,int fathernode = 0,int height = 1){
-    if(fathernode != 0) fdict[currnode] = make_pair(fathernode,height);
-    for(auto ch:dict[currnode]){
-        if(ch == fathernode) dict[currnode].erase(ch);
-        else dict2tree(ch,currnode,height+1);
-    }
-}
-bool solve(){
-    set<int> rec;
-    for(int i=visit.size()-1;i>=0;i--){
-        int node = visit[i];
-        while(node != 1){
-            if(rec.find(node) != rec.end()) return false;
-            node = fdict[node].first;
-        }
-        rec.insert(visit[i]);
-    }
-    int maxheight = 0;
-    for(int i=0;i<visit.size();i++) maxheight = max(maxheight,fdict[visit[i]].second);
-    for(int j=maxheight;j>0;j--){
-        set<int> recmap;
-        for(int k=0;k<visit.size();k++){
-            if(fdict[visit[k]].second == j){
-                visit[k] = fdict[visit[k]].first;
-            }
-            if(recmap.size() == 0 || visit[k] != visit[k-1]){
-                if(recmap.find(visit[k]) != recmap.end()) return false;
-                else recmap.insert(visit[k]);
-            }
-        }
-    }
-    return true;
+const int maxn = 105;
+vector<int> graph[maxn];
+int arr[maxn], fa[maxn], ht[maxn], n, m;
+void dfs(int u, int f, int h){
+    fa[u] = f, ht[u] = h;
+    for(auto v:graph[u]) if(v != f) dfs(v, u, h + 1);
 }
 int main(){
-    //freopen("../input.txt","r",stdin);
-    int t,m,n,v;
-    set<int> tmp;
-    cin>>t;
-    for(int i=0;i<t;i++){
+    //freopen("../input.txt", "r", stdin);
+    int t; cin>>t;
+    while(t--){
+        for(int i=0;i<maxn;i++) graph[i].clear();
         cin>>n;
-        dict.clear(),visit.clear();
-        for(int j=0;j<n-1;j++){
-            int n1,n2;
-            cin>>n1>>n2;
-            if(dict.find(n1) == dict.end()) dict[n1] = tmp;
-            if(dict.find(n2) == dict.end()) dict[n2] = tmp;
-            dict[n1].insert(n2),dict[n2].insert(n1);
+        for(int i=1;i<n;i++){
+            int u, v; cin>>u>>v;
+            graph[u].push_back(v), graph[v].push_back(u);
         }
-        dict2tree(1);
+        dfs(1, 0, 0);
+        int mxh = 0;
         cin>>m;
-        for(int k=0;k<m;k++) cin>>v,visit.push_back(v);
-        bool res = solve();
-        cout<<(res?"YES":"NO")<<endl;
+        for(int i=0;i<m;i++) cin>>arr[i], mxh = max(mxh, ht[arr[i]]); mxh++;
+        bool status = true;
+        while(mxh--){
+            set<int> rc;
+            for(int i=0;i<m;i++) {
+                if(ht[arr[i]] == mxh) arr[i] = fa[arr[i]];
+                if(arr[i] != arr[i-1]) rc.insert(arr[i-1]), status = status & (rc.count(arr[i]) == 0);
+            }
+            if(!status) break;
+        }
+        cout<<(status ? "YES" : "NO")<<endl;
     }
     return 0;
 }

@@ -1,6 +1,4 @@
-#include <iostream>
-#include <algorithm>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
@@ -11,9 +9,7 @@ int main(){
     memset(rec,0,sizeof(rec));
     for(int i=0;i<n;i++){
         cin>>d>>v;
-        for(int j=m;j>=d;j--){
-            rec[j] = max(rec[j],rec[j-d]+v);
-        }
+        for(int j=m;j>=d;j--) rec[j] = max(rec[j],rec[j-d]+v);
     }
     cout<<rec[m]<<endl;
     return 0;

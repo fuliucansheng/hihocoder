@@ -1,30 +1,26 @@
-#include <iostream>
-#include <stack>
-#include <map>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 struct op{
     op(){}
     op(string n,int h,int m,int s,bool t):name(n),hour(h),minute(m),second(s),type(t){}
     string name;
-    int hour,minute,second;
+    int hour, minute, second;
     bool type;
 };
 string time(int hour,int minute,int second){
     string res = "";
-    res += (hour/10) + '0';res += (hour%10) + '0';res += ":";
-    res += (minute/10) + '0';res += (minute%10) + '0';res += ":";
-    res += (second/10) + '0';res += (second%10) + '0';
+    res += (hour/10) + '0'; res += (hour%10) + '0';res += ":";
+    res += (minute/10) + '0'; res += (minute%10) + '0';res += ":";
+    res += (second/10) + '0'; res += (second%10) + '0';
     return res;
 }
 int main(){
     //freopen("../input.txt","r",stdin);
-    int n;
-    cin>>n;
+    int n; cin>>n;
     vector<string> funcs;
     map<string,string> periods;
     stack<op> in;
-    op t,nt,lt("",0,0,-1,true);
+    op t, nt, lt("", 0, 0, -1, true);
     string type;
     char dot;
     bool status = true;
@@ -35,7 +31,7 @@ int main(){
         lt = t;
         if(status && type != "START" && type != "END") status = false;
         if(status) t.type = (type == "START");
-        if(status && t.type) in.push(t),funcs.push_back(t.name);
+        if(status && t.type) in.push(t), funcs.push_back(t.name);
         else if(status){
             if(in.empty()) { status = false; continue; }
             op top = in.top();

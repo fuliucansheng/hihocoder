@@ -1,66 +1,29 @@
-#include <iostream>
-#include <map>
-#include <vector>
-#include <set>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
-map<int,set<int>> dict;
-map<int,int> fdict;
-typedef pair<int,int> edge;
-
-void dict2tree(int currnode, int fathernode = 0){
-    if(fathernode != 0) fdict[currnode] = fathernode;
-    for(auto ch:dict[currnode]){
-        if(ch == fathernode) dict[currnode].erase(ch);
-        else dict2tree(ch, currnode);
-    }
-}
-int maxdepth(int currnode, int arr[]){
-    int res = 0;
-    if(arr[currnode] > 0) return arr[currnode];
-    for(auto c:dict[currnode]){
-        int cdepth = maxdepth(c, arr);
-        res = max(res, cdepth);
-    }
-    res = res + 1;
-    arr[currnode] = res;
-    return res;
-}
-int maxinner(int currnode, int arr[], int mxdepth[]){
-    int res = 0,fdepth = 0,sdepth = 0;
-    if(arr[currnode] > 0) return arr[currnode];
-    for(auto c:dict[currnode]){
-        int cinner = maxinner(c, arr, mxdepth);
-        res = max(res, cinner);
-        if(mxdepth[c] > sdepth){
-            int fdp = fdepth;
-            fdepth = max(fdp, mxdepth[c]);
-            sdepth = min(fdp, mxdepth[c]);
+typedef pair<int,int> pii;
+const int maxn = 100010;
+vector<int> graph[maxn];
+pii dfs(int u, int f){
+    pii ret = pii(0, 0);
+    int a = -1, b = -1;
+    for(auto v:graph[u]) if(v != f){
+            pii r = dfs(v, u);
+            ret.first = max(ret.first, r.first), ret.second = max(ret.second, r.second);
+            if(r.second > a) b = a, a = r.second;
+            else if(r.second > b) b = r.second;
         }
-    }
-    if(dict[currnode].size() > 1) res = max(res,fdepth + sdepth + 2);
-    else if(dict[currnode].size() > 0) res = max(res, fdepth + 1);
-    arr[currnode] = res;
-    return res;
+    if(a != -1 && b != -1) ret.first = max(ret.first, a + b);
+    ret.second++;
+    return ret;
 }
-int main() {
+int main(){
     //freopen("../input.txt","r",stdin);
-    int N,l,r;
-    set<int> tmp;
-    cin>>N;
-    int mxdepth[N+1],mxinner[N+1];
-    memset(mxdepth,0,sizeof(mxdepth));
-    memset(mxinner,0,sizeof(mxinner));
-    for(int i=0;i<N-1;i++){
-        cin>>l>>r;
-        if(dict.find(l) == dict.end()) dict[l] = tmp;
-        if(dict.find(r) == dict.end()) dict[r] = tmp;
-        dict[l].insert(r),dict[r].insert(l);
+    int n; cin>>n;
+    for(int i=1;i<n;i++){
+        int u, v; cin>>u>>v;
+        graph[u].push_back(v), graph[v].push_back(u);
     }
-    dict2tree(1);
-    int height = maxdepth(1,mxdepth);
-    for(int i=0;i<N+1;i++) mxdepth[i]--;
-    int res = maxinner(1,mxinner,mxdepth);
-    cout<<res<<endl;
+    pii ans = dfs(1, 0);
+    cout<<max(ans.first, ans.second - 1)<<endl;
     return 0;
 }

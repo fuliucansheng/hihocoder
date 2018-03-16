@@ -1,53 +1,31 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
-int longest(string str) {
-    if (str.size() == 0) {
-        return 0;
+typedef pair<char,int> pci;
+int solve(string s) {
+    if (s.size() == 0) return 0;
+    vector<pci> rc;
+    for(int i=0;i<s.size();i++){
+        if(i == 0 || s[i] != s[i-1]) rc.push_back(pci(s[i], 1));
+        else rc.back().second++;
     }
-    vector<int> chrnum;
-    vector<char> chr;
-    for(int i=0;i<str.size();i++){
-        if(i == 0 || str[i] != str[i-1]){
-            chr.push_back(str[i]);
-            chrnum.push_back(1);
-        }else{
-            chrnum[chrnum.size()-1]++;
+    int ret = 1;
+    for(int r=0;r<int(rc.size());r++){
+        if(r == 0 || r == int(rc.size()-1) || rc[r - 1].first != rc[r + 1].first) ret = max(ret, rc[r].second);
+        else{
+            int len = rc[r].second, d = 1;
+            while((r - d) > 0 && (r + d) < (rc.size() - 1) && rc[r - d] == rc[r + d]) len += 2 * rc[r-d].second, d++;
+            if(rc[r-d].first == rc[r+d].first) len += 2 * min(rc[r - d].second, rc[r + d].second);
+            if(len > ret) ret = len;
         }
     }
-    int maxlen = 1;
-    for(int r=0;r<chr.size();r++){
-        if(r ==0 || r == (chr.size()-1) || chr[r-1] != chr[r+1]){
-            maxlen = max(maxlen,chrnum[r]);
-        }else{
-            int len = chrnum[r],l=1;
-            while((r-l)>0 && (r+l)<(chr.size()-1) && (chr[r-l] == chr[r+l] && chrnum[r-l] == chrnum[r+l])){
-                len += 2*chrnum[r-l];
-                l++;
-            }
-            if(chr[r-l] == chr[r+l]){
-                len += 2*min(chrnum[r-l],chrnum[r+l]);
-            }
-            if(len > maxlen){
-                maxlen = len;
-            }
-        }
-    }
-    return maxlen;
+    return ret;
 }
 int main() {
-    vector<int> result;
-    int n;
-    cin>>n;
+    //freopen("../input.txt", "r", stdin);
+    int n; cin>>n;
     for(int i=0;i<n;i++){
-        string ss;
-        cin>>ss;
-        result.push_back(longest(ss));
-    }
-    for(int j=0;j<result.size();j++){
-        cout<<result[j]<<endl;
+        string s; cin>>s;
+        cout<<solve(s)<<endl;
     }
     return 0;
 }
-

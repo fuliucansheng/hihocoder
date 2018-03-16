@@ -1,13 +1,11 @@
-#include <iostream>
-#include <cstring>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 const long long maxn = (100000+50)<<1;
-int in[maxn][26],fa[maxn],mx[maxn],ct[maxn],rec[maxn];
+int in[maxn][26], fa[maxn], mx[maxn], ct[maxn], rec[maxn];
 int nn,last,srh,len;
 void build(int x){
     int p=last,np=++nn;
-    mx[np]=mx[p]+1;ct[np]=1;
+    mx[np]=mx[p]+1, ct[np]=1;
     while(p&&!in[p][x]) in[p][x]=np,p=fa[p];
     if(!p) fa[np] = 1;
     else{
@@ -60,7 +58,7 @@ int main(){
         cin>>ss;
         int k = ss.size(), res = 0;
         srh = 1, len = 0;
-        ss += ss.substr(0,ss.size()-1);
+        ss += ss.substr(0, ss.size()-1);
         for(auto c:ss) res += search(c-'a', k);
         cout<<res<<endl;
     }

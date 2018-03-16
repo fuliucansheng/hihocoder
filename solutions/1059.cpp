@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
 int main(){
     //freopen("../input.txt","r",stdin);
@@ -14,7 +13,7 @@ int main(){
                 if(k >= 2) r = max(r, k+1+dp[i+k+1][j+k+1]);
                 k++;
             }
-            dp[i][j] = max(r, max(dp[i+1][j], dp[i][j+1]));
+            dp[i][j] = max({r, dp[i+1][j], dp[i][j+1]});
         }
     }
     cout<<dp[0][0]<<endl;

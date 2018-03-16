@@ -1,37 +1,29 @@
-#include <iostream>
-#include <algorithm>
-#include <map>
+#include <bits/stdc++.h>
 using namespace std;
-typedef pair<int,int> point;
-typedef pair<point,point> oppoint;
-long long distance(point x,point y){
-    long long xx = y.first - x.first,yy = y.second - x.second;
-    return xx*xx+yy*yy;
+typedef pair<int,int> pii;
+typedef pair<pii,pii> ppp;
+typedef long long ll;
+ll get_dis(pii a, pii b){
+    ll x = b.first - a.first, y = b.second - a.second;
+    return x * x + y * y;
+}
+bool line_cross(ppp a, ppp b){
+    ll da = get_dis(a.first, a.second), db = get_dis(b.first, b.second);
+    if(a.first == b.first && (da + db) == get_dis(a.second, b.second)) return true;
+    if(a.first == b.second && (da + db) == get_dis(a.second, b.first)) return true;
+    if(a.second == b.first && (da + db) == get_dis(a.first, b.second)) return true;
+    if(a.second == b.second && (da + db) == get_dis(a.first, b.first)) return true;
+    return false;
 }
 int main(){
-    //freopen("../input.txt","r",stdin);
-    int m;
-    cin>>m;
-    for(int i=0;i<m;i++){
-        map<point,oppoint> dict;
-        for(int j=0;j<4;j++){
-            oppoint tmp;
-            point start,stop;
-            cin>>start.first>>start.second>>stop.first>>stop.second;
-            if(dict.find(start) == dict.end()) dict[start] = tmp,dict[start].first = stop;
-            else dict[start].second = stop;
-            if(dict.find(stop) == dict.end()) dict[stop] = tmp,dict[stop].first = start;
-            else dict[stop].second = start;
-        }
-        int res = true;
-        for(auto dt:dict){
-            point curr = dt.first,oppot1 = dt.second.first,oppot2 = dt.second.second;
-            if(distance(curr,oppot1)+distance(curr,oppot2) != distance(oppot1,oppot2)){
-                res = false;
-                break;
-            }
-        }
-        cout<<(res?"YES":"NO")<<endl;
+    //freopen("../input.txt", "r", stdin);
+    int t; cin>>t;
+    while(t--){
+        int cnt = 0;
+        ppp arr[4];
+        for(int i=0;i<4;i++) cin>>arr[i].first.first>>arr[i].first.second>>arr[i].second.first>>arr[i].second.second;
+        for(int i=0;i<4;i++) for(int j=i+1;j<4;j++) if(line_cross(arr[i], arr[j])) cnt++;
+        cout<<(cnt == 4 ? "YES" : "NO")<<endl;
     }
     return 0;
 }

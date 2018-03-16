@@ -1,5 +1,4 @@
-#include <iostream>
-#include <map>
+#include <bits/stdc++.h>
 using namespace std;
 map<char,int> dict;
 map<string,int> rec;

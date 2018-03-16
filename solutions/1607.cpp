@@ -1,15 +1,14 @@
-#include <iostream>
-#include <cstring>
-#include <cmath>
+#include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
 const int maxn = 100050;
 int arr[maxn], rec[maxn], n;
 int lowbit(int x){ return x&-x; }
 void update(int x){
     while(x < maxn) rec[x]++, x += lowbit(x);
 }
-long long query(int x){
-    long long r = 0;
+ll query(int x){
+    ll r = 0;
     while(x > 0) r += rec[x], x -= lowbit(x);
     return r;
 }
@@ -18,7 +17,7 @@ int main(){
     memset(arr, 0, sizeof(arr));memset(rec, 0 , sizeof(rec));
     cin>>n;
     for(int i=1;i<=n;i++) cin>>arr[i], update(arr[i]);
-    long long res = 0;
+    ll res = 0;
     for(int i=1;i<=n;i++){
         double l = 1/8.0*arr[i]+8, r = 8.0*arr[i]+8;
         if(arr[i] < 88888) r = min(r, 88888.0);

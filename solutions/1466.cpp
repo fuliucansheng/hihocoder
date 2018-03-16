@@ -1,10 +1,10 @@
-#include <iostream>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
 const int maxn = (100000+50)*2;
 struct SAM{
     int in[maxn][26],fa[maxn],mx[maxn],sg[maxn],vis[26];
-    long long ct[maxn][26];
+    ll ct[maxn][26];
     int nn,last;
     void init(){
         memset(fa, 0, sizeof(fa));memset(mx, 0, sizeof(mx));
@@ -48,22 +48,22 @@ struct SAM{
         }
     }
 } A,B;
-long long count_now(int asg, int bs){
-    long long sum = 0;
+ll count_now(int asg, int bs){
+    ll sum = 0;
     for(int i=0;i<26;i++) if(i!=asg) sum += B.ct[bs][i];
     return sum;
 }
-long long count_pre(int as, int bs){
-    long long sum = 0;
+ll count_pre(int as, int bs){
+    ll sum = 0;
     for(int i=0;i<26;i++) sum += A.ct[as][i]*count_now(i, bs);
     return sum;
 }
-long long count_pnt(int as, int bs){
+ll count_pnt(int as, int bs){
     return (A.sg[as] != B.sg[bs] && A.ct[as][A.sg[as]] && B.ct[bs][B.sg[bs]] ? 1 : 0);
 }
 int main(){
     //freopen("../input.txt","r",stdin);
-    long long k;
+    ll k;
     cin>>k;
     string a,b;
     cin>>a>>b;
@@ -76,11 +76,11 @@ int main(){
     int as = 1, bs = 1;
     if(count_pre(as,bs) >= 0 && count_pre(as,bs) < k) status = false;
     while(status && k > 0){
-        long long rn = count_now(A.sg[as], bs);
+        ll rn = count_now(A.sg[as], bs);
         if(rn >= k) break; else k -= rn;
         for(int i=0;i<26;i++)
             if(A.in[as][i]){
-                long long r = count_pre(A.in[as][i], bs);
+                ll r = count_pre(A.in[as][i], bs);
                 if(r >= 0 && r < k) k -= r;
                 else { as = A.in[as][i], ra += (i+'a'); break; }
             }
@@ -90,7 +90,7 @@ int main(){
         if(k == 0) break;
         for(int i=0;i<26;i++)
             if (B.in[bs][i]) {
-                long long r = count_now(A.sg[as], B.in[bs][i]);
+                ll r = count_now(A.sg[as], B.in[bs][i]);
                 if (r < k) k -= r;
                 else { bs = B.in[bs][i], rb += (i + 'a');break;}
             }

@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 char graph[15][15];
 bool is_valid(int i,int j){

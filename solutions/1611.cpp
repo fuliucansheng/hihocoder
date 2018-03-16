@@ -1,8 +1,4 @@
-#include <iostream>
-#include <cstring>
-#include <cmath>
-#include <queue>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 const int maxn = 1050;
 struct node{

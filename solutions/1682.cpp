@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #define v(x) (x >= 0 && x < n)
 using namespace std;
 int dx[8] = { -1, -1, -1, 0, 0, 1, 1, 1 };

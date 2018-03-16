@@ -1,41 +1,39 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
-typedef pair<int,int> unit;
-bool check(vector<unit> rec,int pp,int r){
-    int m = 0, store[rec.size()];
-    memset(store,0,sizeof(store));
-    for(int i=0;i<rec.size();i++){
-        if(m >= rec.size() || (rec[m].first - rec[i].first > r)) return false;
-        while(rec[i].first - rec[m].first > r) m++;
-        if((pp - store[m]) < rec[i].second) rec[i].second -= (pp - store[m]),store[m] = pp,m++,i--;
-        else store[m] += rec[i].second,rec[i].second = 0;
+typedef pair<int,int> pii;
+const int maxn = 100010;
+pii arr[maxn];
+int rc[maxn], n, R;
+bool is_valid(int m){
+    memset(rc, 0, sizeof(rc));
+    int p = 0;
+    for(int i=0;i<n;i++){
+        while(abs(arr[i].first - arr[p].first) > R) p++;
+        int c = arr[i].second;
+        while(c) {
+            if(p >= n || abs(arr[i].first - arr[p].first) > R) return false;
+            int d = min(c, m - rc[p]);
+            rc[p] += d, c -= d;
+            if(rc[p] == m) p++;
+        }
     }
     return true;
 }
-int solve(vector<unit> rec,int r){
-    sort(rec.begin(),rec.end(),[](unit a,unit b){ return a.first < b.first; });
-    int right = rec[0].second;
-    for(int i=0;i<rec.size();i++) right = max(right,rec[i].second);
-    int mid = right/2, left = 0;
-    while(left != mid){
-        if(check(rec,mid,r)) right = mid, mid = (left+right)/2;
-        else left = mid+1, mid = (left+right)/2;
-    }
-    return check(rec,mid,r) ? mid : right;
-}
 int main(){
     //freopen("../input.txt","r",stdin);
-    int t,n,r;
-    cin>>t;
+    int t; cin>>t;
     while(t--){
-        cin>>n>>r;
-        vector<unit> rec;
-        unit tp;
-        for(int i=0;i<n;i++) cin>>tp.first>>tp.second,rec.push_back(tp);
-        cout<<solve(rec,r)<<endl;
+        cin>>n>>R;
+        for(int i=0;i<n;i++) cin>>arr[i].first>>arr[i].second;
+        sort(arr, arr + n);
+        int l = 0, r = 1000000000;
+        while(r - l > 1){
+            int m = (l + r) / 2;
+            if(is_valid(m)) r = m; else l = m;
+        }
+        if(is_valid(l)) cout<<l<<endl;
+        else cout<<r<<endl;
     }
     return 0;
 }
+

@@ -1,59 +1,42 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
-
-class trienode{
-public:
-    char value;
-    int count = 0;
-    vector<trienode*> arr;
-};
-int main() {
-    int n,m;
-    vector<string> chr,search;
-    cin>>n;
+const int maxchild = 26, maxnode = 1000010;
+struct Trie {
+    int graph[maxnode][maxchild], cnt[maxnode], val[maxnode], sz;
+    Trie() { sz = 1; memset(graph, 0, sizeof(graph)); memset(val, 0, sizeof(val)); memset(cnt, 0, sizeof(cnt)); }
+    int idx(char s) { return s - 'a'; }
+    void insert(string str, int v) {
+        int u = 0;
+        for (int i = 0; i < str.size(); i++) {
+            cnt[u]++;
+            int c = idx(str[i]);
+            if (!graph[u][c]) graph[u][c] = sz++;
+            u = graph[u][c];
+        }
+        val[u] = v, cnt[u]++;
+    }
+    int search(string str){
+        int u = 0;
+        for(int i=0;i<int(str.size());i++) {
+            int c = idx(str[i]);
+            if(!graph[u][c]) return 0;
+            u = graph[u][c];
+        }
+        return cnt[u];
+    }
+}tre;
+int main(){
+    //freopen("../input.txt","r",stdin);
+    int n; cin>>n;
     for(int i=0;i<n;i++){
-        string s;
-        cin>>s;
-        chr.push_back(s);
+        string s; cin>>s;
+        tre.insert(s, i + 1);
     }
-    cin>>m;
+    int m; cin>>m;
     for(int i=0;i<m;i++){
-        string s;
-        cin>>s;
-        search.push_back(s);
-    }
-    trienode  *root = new trienode();
-    for(string ch:chr){
-        trienode *point = root;
-        for(char s:ch){
-            auto res = find_if(point->arr.begin(),point->arr.end(),[s](trienode *it){ return it->value == s;});
-            if(res != point->arr.end()){
-                point = *res;
-            }else{
-                trienode *newnode = new trienode();
-                newnode->value = s;
-                point->arr.push_back(newnode);
-                point = point->arr.back();
-            }
-            point->count++;
-        }
-    }
-    for(string sh:search){
-        int result = 0;
-        trienode *pt = root;
-        for(char ss:sh){
-            auto res = find_if(pt->arr.begin(),pt->arr.end(),[ss](trienode *it){ return it->value == ss;});
-            if(res != pt->arr.end()){
-                pt = *res;
-                result = pt->count;
-            }else{
-                result = 0;
-                break;
-            }
-        }
-        cout<<result<<endl;
+        string s; cin>>s;
+        cout<<tre.search(s)<<endl;
     }
     return 0;
 }
+

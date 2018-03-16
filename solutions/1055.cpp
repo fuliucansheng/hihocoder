@@ -1,35 +1,25 @@
-#include <iostream>
-#include <map>
-#include <set>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
-const int N = 101;
-map<int,set<int>> dict;
-int values[N],n,m,l,r;;
-int dp[N][N];
-void dict2tree(int currnode, int fathernode = 0){
-    for(auto ch:dict[currnode]){
-        if(ch == fathernode) dict[currnode].erase(ch);
-        else dict2tree(ch, currnode);
-    }
-}
-void solve(int currnode){
-    for(auto ch:dict[currnode]) solve(ch);
-    for(int i=1;i<=m;i++) dp[currnode][i] = values[currnode];
-    for(auto ch:dict[currnode])
-        for(int i=m;i>0;i--){
-            for(int k=1;k<i;k++) dp[currnode][i] = max(dp[currnode][i],dp[currnode][i-k]+dp[ch][k]);
+const int maxn = 105;
+vector<int> graph[maxn];
+int arr[maxn], dp[maxn][maxn], n, m;
+void dfs(int u, int f){
+    dp[u][1] = arr[u];
+    for(auto v:graph[u]) if(v != f){
+            dfs(v, u);
+            for(int i=m;i>0;i--) for(int j=1;j<i;j++) dp[u][i] = max(dp[u][i], dp[v][j] + dp[u][i-j]);
         }
 }
 int main(){
     //freopen("../input.txt","r",stdin);
     cin>>n>>m;
-    memset(values, 0, sizeof(values));
+    for(int i=1;i<=n;i++) cin>>arr[i];
+    for(int i=1;i<n;i++){
+        int u, v; cin>>u>>v;
+        graph[u].push_back(v), graph[v].push_back(u);
+    }
     memset(dp, 0, sizeof(dp));
-    for(int i=1;i<=n;i++) cin>>values[i];
-    for(int i=0;i<n-1;i++) cin>>l>>r,dict[l].insert(r),dict[r].insert(l);
-    dict2tree(1);
-    solve(1);
+    dfs(1, 0);
     cout<<dp[1][m]<<endl;
     return 0;
 }
