@@ -1,7 +1,6 @@
-#include <iostream>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
-const int maxchild = 26, maxnode = 2e6+50;
+const int maxchild = 26, maxnode = 2000010;
 struct Trie {
     int graph[maxnode][maxchild], cnt[maxnode];
     int sz, ct;

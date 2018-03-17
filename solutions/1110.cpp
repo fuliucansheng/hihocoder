@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
 bool solve(string s){
     bool dp[s.size()][s.size()];

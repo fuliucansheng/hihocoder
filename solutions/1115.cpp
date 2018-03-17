@@ -1,19 +1,14 @@
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 const int maxn = 7;
 struct node{
     int hp, atk;
     bool d = false,w = false;
-};
+}arr[maxn];
 int n;
-node arr[maxn];
 bool dfs(int i, int &dmg, int rest, bool dd){
-    if(i == n){
-        if(rest > 0) return false;
-        return true;
-    }
-    bool res = false;
+    if(i == n) return rest <= 0;
+    bool ret = false;
     int cs = 2, mx = 0;
     if(arr[i].w) cs = 3;
     for(int c=0;c<cs;c++){
@@ -21,16 +16,16 @@ bool dfs(int i, int &dmg, int rest, bool dd){
         if(c == 0) {
             bool r = dd ? (arr[i].w && (arr[i].hp>8 || arr[i].d) ? dfs(i+1, dg, rest-arr[i].atk, false) : dfs(i+1, dg, rest, false))
                         : (arr[i].w && (arr[i].hp>8 || arr[i].d) ? dfs(i+1, dg, rest-2*arr[i].atk, false) : dfs(i+1, dg, rest-arr[i].atk, false));
-            if(r) mx = max(mx, dg), res = true;
+            if(r) mx = max(mx, dg), ret = true;
         }
-        if(c == 1 && dfs(i+1, dg, rest, dd)) mx = max(mx, dg+(arr[i].w ? 2*arr[i].atk : arr[i].atk)), res = true;
+        if(c == 1 && dfs(i+1, dg, rest, dd)) mx = max(mx, dg+(arr[i].w ? 2*arr[i].atk : arr[i].atk)), ret = true;
         if(c == 2) {
             bool r = dd ? dfs(i+1, dg, rest, false) : dfs(i+1, dg, rest-arr[i].atk, false);
-            if(r) mx = max(mx, dg+((arr[i].hp > 8 || arr[i].d) ? arr[i].atk : 0)), res = true;
+            if(r) mx = max(mx, dg+((arr[i].hp > 8 || arr[i].d) ? arr[i].atk : 0)), ret = true;
         }
     }
     dmg = mx;
-    return res;
+    return ret;
 }
 int main(){
     //freopen("../input.txt","r",stdin);

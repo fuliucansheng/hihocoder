@@ -1,6 +1,4 @@
-#include <iostream>
-#include <cstring>
-#include <limits>
+#include <bits/stdc++.h>
 using namespace std;
 
 void seg_tree_build(int node, int left, int right, int T[], int A[]){
@@ -22,7 +20,6 @@ int seg_tree_query(int node, int left, int right, int treeleft, int treeright, i
     return min(l,r);
 }
 
-//单点更新
 void seg_tree_update(int node, int left, int right, int ind, int add, int T[]){
     if(left == right)  { T[node] = add; return; }
     int mid = (left + right)/2;

@@ -1,41 +1,26 @@
-#include <iostream>
-#include <cstring>
-#include <map>
-#include <queue>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
-const int maxn = 1e5+10;
-vector<int> graph[maxn];
-map<pair<int,int>,int> dict;
-int dis[maxn],vis[maxn];
+typedef pair<int,int> pii;
+const int maxn = 100010;
+vector<pii> graph[maxn];
+int dis[maxn], n, m, s, t;
+bool vis[maxn];
 int main(){
-    //freopen("../input.txt","r",stdin);
-    memset(vis, 0, sizeof(vis));
-    for(int i=0;i<maxn;i++) dis[i] = INT32_MAX;
-    int n,m,s,t,u,v,l;
+    //freopen("../input.txt", "r", stdin);
     cin>>n>>m>>s>>t;
-    for(int i=0;i<m;i++) {
-        cin>>u>>v>>l;
-        graph[u].push_back(v),graph[v].push_back(u);
-        pair<int,int> key = make_pair(min(u,v),max(u,v));
-        int value = dict[key];
-        dict[key] = value ? min(l,value) : l;
+    for(int i=1;i<=m;i++){
+        int u, v, d; cin>>u>>v>>d;
+        graph[u].push_back(pii(v, d)), graph[v].push_back(pii(u, d));
     }
+    memset(vis, 0, sizeof(vis)), memset(dis, 0x3f, sizeof(dis));
     queue<int> Q;
-    dis[s] = 0, vis[s] = 1;
-    Q.push(s);
+    Q.push(s), dis[s] = 0, vis[s] = true;
     while(!Q.empty()){
-        int f = Q.front();
-        vis[f] = 1;
-        for(auto e:graph[f]){
-            int de = dict[make_pair(min(f,e),max(f,e))];
-            if(dis[e] > de + dis[f]) {
-                dis[e] = de + dis[f];
-                if(vis[e] != 1) Q.push(e), vis[e] = 1;
+        int f = Q.front(); Q.pop(), vis[f] = false;
+        for(auto p:graph[f]) if(dis[p.first] > dis[f] + p.second){
+                dis[p.first] = dis[f] + p.second;
+                if(!vis[p.first]) Q.push(p.first), vis[p.first] = true;
             }
-        }
-        vis[f] = 0;
-        Q.pop();
     }
     cout<<dis[t]<<endl;
     return 0;

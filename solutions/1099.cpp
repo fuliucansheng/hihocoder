@@ -1,14 +1,13 @@
-#include <iostream>
-#include <vector>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
+typedef pair<int,int> pii;
 const int maxk = 20;
-int m,n,k,h,w;
+int m, n, k, h, w;
 char s;
-vector<pair<int,int>> cons[maxk];
-set<pair<int,int>> sky;
+vector<pii> cons[maxk];
+set<pii> sky;
 bool is_valid(int c, int i, int j){
-    for(auto p:cons[c]) if(sky.find(make_pair(p.first+i,p.second+j)) == sky.end()) return false;
+    for(auto p:cons[c]) if(!sky.count(pii(p.first+i,p.second+j))) return false;
     return true;
 }
 bool search(int c){
@@ -23,15 +22,15 @@ int main(){
         int s_a = h, s_b = w;
         for(int a=0;a<h;a++) for(int b=0;b<w;b++) {
                 cin>>s;
-                if(s == '#') {
-                    s_a = min(s_a, a), s_b = min(s_b, b);
-                    cons[i].push_back(make_pair(a,b));
-                }
+                if(s == '#') s_a = min(s_a, a), s_b = min(s_b, b), cons[i].push_back(pii(a,b));
             }
-        for(int j=0;j<cons[i].size();j++) cons[i][j].first -= s_a, cons[i][j].second -= s_b;
+        for(auto& v:cons[i]) v.first -= s_a, v.second -= s_b;
     }
     cin>>n>>m;
-    for(int i=0;i<n;i++) for(int j=0;j<m;j++) { cin>>s;if(s == '#') sky.insert(make_pair(i,j));}
-    for(int i=0;i<k;i++) if(search(i)) cout<<"Yes"<<endl; else cout<<"No"<<endl;
+    for(int i=0;i<n;i++) for(int j=0;j<m;j++) {
+            cin>>s;
+            if(s == '#') sky.insert(make_pair(i,j));
+        }
+    for(int i=0;i<k;i++) cout<<(search(i) ? "Yes": "No")<<endl;
     return 0;
 }

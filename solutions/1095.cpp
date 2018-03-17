@@ -1,8 +1,7 @@
-#include <iostream>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
-const int maxn = 1e5+10;
-int arr[maxn],n,k;
+const int maxn = 100010;
+int arr[maxn], n, k;
 bool judge(int t){
     int hi_score = 0, ho_score = 0, ho_water = 0;
     for(int i=0;i<n;i++){
@@ -13,13 +12,12 @@ bool judge(int t){
     return ho_score > hi_score;
 }
 int search(){
-    int l = 0, r = k+1;
+    int l = 0, r = k + 1;
     while(r - l > 1){
-        if(judge((l+r)/2)) r = (l+r)/2;
-        else l = (l+r)/2;
+        if(judge((l + r)/2)) r = (l + r) / 2;
+        else l = (l + r) / 2;
     }
-    if(l == r) return l;
-    else return judge(l) ? l : r;
+    return judge(l) ? l : r;
 }
 int main(){
     //freopen("../input.txt","r",stdin);

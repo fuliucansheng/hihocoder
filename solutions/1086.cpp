@@ -1,18 +1,14 @@
-#include <iostream>
-#include <map>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
     //freopen("../input.txt","r",stdin);
-    int m,n;
-    string url;
-    cin>>n>>m;
+    int m, n; cin>>n>>m;
     map<string,int> dict;
     set<int> rec;
     for(int i=1;i<=n;i++){
-        cin>>url;
-        if(rec.find(dict[url]) != rec.end()){
+        string url; cin>>url;
+        if(rec.count(dict[url])){
             rec.erase(dict[url]), rec.insert(i);
             dict[url] = i;
             cout<<"Cache"<<endl;

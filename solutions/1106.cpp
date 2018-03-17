@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int dfs(int i, int n){
     if(i == 0) return 0;
@@ -11,7 +11,7 @@ int main(){
     int t, i, n; cin>>t;
     while(t--){
         cin>>i>>n;
-        cout<<dfs(i-1,n)<<endl;
+        cout<<dfs(i-1, n)<<endl;
     }
     return 0;
 }

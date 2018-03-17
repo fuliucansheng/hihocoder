@@ -1,8 +1,6 @@
-#include <iostream>
-#include <cstring>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
-const int maxn = 1e5+10;
+const int maxn = 100010;
 int arr[maxn], n;
 void solve(){
     int v1[n], v2[n];

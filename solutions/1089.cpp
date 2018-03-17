@@ -1,23 +1,17 @@
-#include <iostream>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
-const int MAXN = 101;
-int graph[MAXN][MAXN];
+const int maxn = 101;
+int dis[maxn][maxn], n, m, u, v, c;
 int main(){
     //freopen("../input.txt","r",stdin);
-    memset(graph, 0x3f, sizeof(graph));
-    int n,m,u,v,c;
+    memset(dis, 0x3f, sizeof(dis));
     cin>>n>>m;
-    for(int i=0;i<n;i++) graph[i][i] = 0;
-    for(int i=0;i<m;i++) cin>>u>>v>>c, graph[v-1][u-1] = graph[u-1][v-1] = min(graph[u-1][v-1], c);
-    for(int k=0;k<n;k++){
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++) graph[i][j] = min(graph[i][j], graph[i][k] + graph[k][j]);
-        }
-    }
+    for(int i=0;i<n;i++) dis[i][i] = 0;
+    for(int i=0;i<m;i++) cin>>u>>v>>c, dis[v-1][u-1] = dis[u-1][v-1] = min(dis[u-1][v-1], c);
+    for(int k=0;k<n;k++) for(int i=0;i<n;i++) for(int j=0;j<n;j++) dis[i][j] = min(dis[i][j], dis[i][k] + dis[k][j]);
     for(int i=0;i<n;i++){
-        for(int j=0;j<n-1;j++) cout<<graph[i][j]<<" ";
-        cout<<graph[i][n-1]<<endl;
+        for(int j=0;j<n;j++) cout<<dis[i][j]<<" ";
+        cout<<endl;
     }
     return 0;
 }

@@ -1,6 +1,6 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-const int maxn = 1e3+10;
+const int maxn = 1010;
 int arr[maxn][maxn], dis[maxn];
 int main(){
     //freopen("../input.txt","r",stdin);

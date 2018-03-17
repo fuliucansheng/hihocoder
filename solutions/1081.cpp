@@ -1,40 +1,27 @@
-#include <iostream>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
-const int MAXN = 1001;
-int rec[MAXN],dis[MAXN][MAXN],status[MAXN];
-int m,n,s,t,ms,mt,md;
-void update(int node){
-    for(int i=1;i<=n;i++){
-        if(!status[i] && dis[node][i] != -1){
-            rec[i] = (rec[i] != -1 ? min(rec[i], rec[node]+dis[node][i]) : rec[node]+dis[node][i]);
-        }
-    }
-}
-void step(){
-    int node = -1;
-    for(int i=1;i<=n;i++){
-        if(!status[i] && rec[i] != -1){
-            if(node == -1) node = i;
-            else if(rec[i] < rec[node]) node = i;
-        }
-    }
-    status[node] = 1;
-    update(node);
-}
+typedef pair<int,int> pii;
+const int maxn = 1010;
+vector<pii> graph[maxn];
+int dis[maxn], n, m, s, t;
+bool vis[maxn];
 int main(){
-    //freopen("../input.txt","r",stdin);
-    memset(dis, -1, sizeof(dis));memset(rec, -1, sizeof(rec));memset(status, 0, sizeof(status));
+    //freopen("../input.txt", "r", stdin);
     cin>>n>>m>>s>>t;
-    for(int i=0;i<m;i++) {
-        cin>>ms>>mt>>md;
-        md = (dis[ms][mt] != -1) ? min(dis[ms][mt], md) : md;
-        md = (dis[mt][ms] != -1) ? min(dis[mt][ms], md) : md;
-        dis[mt][ms] = dis[ms][mt] = md;
+    for(int i=1;i<=m;i++){
+        int u, v, d; cin>>u>>v>>d;
+        graph[u].push_back(pii(v, d)), graph[v].push_back(pii(u, d));
     }
-    rec[s] = 0, status[s] = 1;update(s);
-    while(!status[t]) step();
-    cout<<rec[t]<<endl;
+    memset(vis, 0, sizeof(vis)), memset(dis, 0x3f, sizeof(dis));
+    queue<int> Q;
+    Q.push(s), dis[s] = 0, vis[s] = true;
+    while(!Q.empty()){
+        int f = Q.front(); Q.pop(), vis[f] = false;
+        for(auto p:graph[f]) if(dis[p.first] > dis[f] + p.second){
+                dis[p.first] = dis[f] + p.second;
+                if(!vis[p.first]) Q.push(p.first), vis[p.first] = true;
+            }
+    }
+    cout<<dis[t]<<endl;
     return 0;
 }
-
