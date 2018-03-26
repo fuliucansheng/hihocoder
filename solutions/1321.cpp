@@ -1,48 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-const int maxn = 101;
-vector<int> r[maxn], c[maxn];
-bool vr[maxn], vc[maxn];
-int m, n;
-bool dfs(int col){
-    if(col == m + 1) return true;
-    for(auto rr:c[col]) if(!vr[rr]) {
-            stack<int> sr, sc;
-            for(auto cc:r[rr]) {
-                if(!vc[cc]) sc.push(cc), vc[cc] = true;
-                for(auto rd:c[cc]) if(!vr[rd]) sr.push(rd), vr[rd] = true;
-            }
-            int nc = col + 1;
-            while(vc[nc]) nc++;
-            bool rs = dfs(nc);
-            if(rs) return true;
-            while(!sr.empty()) vr[sr.top()] = false, sr.pop();
-            while(!sc.empty()) vc[sc.top()] = false, sc.pop();
-        }
-    return false;
-}
-int main(){
-    //freopen("../input.txt","r",stdin);
-    int t; cin>>t;
-    while(t--){
-        memset(vr, 0, sizeof(vr)); memset(vc, 0, sizeof(vc));
-        for(int i=0;i<maxn;i++) r[i].clear(), c[i].clear();
-        cin>>n>>m;
-        for(int i=1;i<=n;i++) for(int j=1;j<=m;j++) {
-                int num; cin>>num;
-                if(num) r[i].push_back(j), c[j].push_back(i);
-            }
-        bool rs = dfs(1);
-        cout<<(rs ? "Yes" : "No")<<endl;
-    }
-    return 0;
-}
-
-
-// DLX
-#include <bits/stdc++.h>
-using namespace std;
-const int maxn = 101, maxnode = 10010, maxm = 101;
+const int maxn = 1000, maxnode = 3000, maxm = 500;
 struct DLX{
     int S[maxm], row[maxnode], col[maxnode], n, sz;
     int L[maxnode], R[maxnode], U[maxnode], D[maxnode];
@@ -88,22 +46,43 @@ struct DLX{
         restore(c);
         return false;
     }
+    bool solve(vector<int>& v){
+        v.clear();
+        if(!dfs(0)) return false;
+        for(int i=0;i<ansd;i++) v.push_back(ans[i]);
+        return true;
+    }
 } dlx;
+int arr[9][9];
+int encode(int a, int b, int c){
+    return a * 81 + b * 9 + c + 1;
+}
+void decode(int code, int& a, int& b, int& c){
+    code--;
+    c = code % 9; code /= 9;
+    b = code % 9; code /= 9;
+    a = code;
+}
 int main(){
     //freopen("../input.txt", "r", stdin);
     int t; cin>>t;
     while(t--){
-        int n, m; cin>>n>>m;
-        dlx.init(m);
-        for(int i=0;i<n;i++){
-            vector<int> rr;
-            for(int j=0, a;j<m;j++){
-                cin>>a;
-                if(a) rr.push_back(j + 1);
-            }
-            dlx.addRow(i, rr);
+        dlx.init(324);
+        for(int i=0;i<9;i++) for(int j=0;j<9;j++) cin>>arr[i][j];
+        for(int i=0;i<9;i++) for(int j=0;j<9;j++) for(int v=0;v<9;v++) if(arr[i][j] == 0 || arr[i][j] - 1 == v){
+                        vector<int> rr = {encode(0, i, j), encode(1, i, v), encode(2, j, v), encode(3, i / 3 * 3 + j / 3, v)};
+                        dlx.addRow(encode(i,j,v), rr);
+                    }
+        vector<int> ans;
+        dlx.solve(ans);
+        for(auto aa:ans){
+            int i, j, v; decode(aa, i, j, v);
+            arr[i][j] = v + 1;
         }
-        cout<<(dlx.dfs(0) ? "Yes" : "No")<<endl;
+        for(int i=0;i<9;i++){
+            for(int j=0;j<9;j++) cout<<arr[i][j]<<" ";
+            cout<<endl;
+        }
     }
     return 0;
 }
