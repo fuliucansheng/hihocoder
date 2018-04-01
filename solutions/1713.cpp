@@ -38,6 +38,7 @@ int main(){
             dp[nr] += dp[f];
             if(!vis[nr]) Q.push(nr), vis[nr] = true;
         }
+        if(f != t) dp[f] = 0; //加上这个更好理解
         vis[f] = false;
     }
     cout<<dp[t]<<endl;
