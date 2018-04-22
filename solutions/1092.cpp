@@ -1,60 +1,42 @@
-#include <iostream>
-#include <cstring>
-#include <queue>
+#include <bits/stdc++.h>
 using namespace std;
-#define g(n) graph[n.first][n.second]
-#define v(n) visited[n.first][n.second]
-#define nt(n) (n.first > 0) ? p(n.first-1, n.second) : p(-1, -1)
-#define nb(n) (n.first < nn - 1) ? p(n.first + 1, n.second) : p(-1, -1)
-#define nl(n) (n.second > 0) ? p(n.first, n.second-1) : p(-1, -1)
-#define nr(n) (n.second < mm - 1) ? p(n.first, n.second + 1) : p(-1, -1)
-typedef pair<int,int> p;
-const int maxn = 100;
-int nn,mm,x,y;
-char graph[maxn][maxn];
-int visited[maxn][maxn];
-bool is_valid(p node){
-    return v(node) == 0 && g(node) != '#' && g(node) != 'P';
-}
-int bfs(int x, int y){
-    queue<p> Q;
-    int res = 0;
-    Q.push(make_pair(x,y));
-    while(!Q.empty()){
-        res++;
-        for(int i=Q.size();i>0;i--){
-            p n = Q.front();
-            visited[n.first][n.second] = res;
-            p t = nt(n),l = nl(n), r = nr(n), b = nb(n);
-            if(g(n) == 'S'){
-                int rr = INT32_MAX;
-                if(g(t) == 'S' && v(t) >= 1) rr = min(rr, res + v(t));
-                if(g(l) == 'S' && v(l) >= 1) rr = min(rr, res + v(l));
-                if(g(r) == 'S' && v(r) >= 1) rr = min(rr, res + v(r));
-                if(g(b) == 'S' && v(b) >= 1) rr = min(rr, res + v(b));
-                if(rr != INT32_MAX) return rr - 2;
-            }else{
-                if(is_valid(t)) Q.push(t);
-                if(is_valid(l)) Q.push(l);
-                if(is_valid(r)) Q.push(r);
-                if(is_valid(b)) Q.push(b);
-            }
-            Q.pop();
+#define inf 0x3f3f3f3f
+#define vp(p) (p.first >= 0 && p.first < n && p.second >= 0 && p.second < m)
+#define a(p) arr[p.first][p.second]
+#define d(p) ds[p.first][p.second]
+#define v(p) vs[p.first][p.second]
+typedef pair<int,int> pii;
+const int maxn = 101;
+int ds[maxn][maxn], n, m;
+string arr[maxn];
+bool vs[maxn][maxn];
+vector<pii> nbr = { pii(-1, 0), pii(1, 0), pii(0, -1), pii(0, 1) };
+int bfs(pii s) {
+    memset(vs, 0, sizeof(vs)); memset(ds, inf, sizeof(ds));
+    v(s) = true, d(s) = 0;
+    queue<pii> Q; Q.push(s);
+    int ret = inf;
+    while(!Q.empty()) {
+        pii f = Q.front(); Q.pop();
+        for(auto nb:nbr) {
+            pii nr = pii(f.first + nb.first, f.second + nb.second);
+            if(a(f) == 'S' && vp(nr) && a(nr) == 'S' && d(nr) != inf) ret = min(ret, d(f) + d(nr));
+            if(a(f) != 'S' && vp(nr) && !v(nr) && (a(nr) == '.' || a(nr) == 'S')) Q.push(nr), v(nr) = true, d(nr) = d(f) + 1;
         }
     }
-    return -1;
+    return ret;
 }
 int main(){
-    //freopen("../input.txt","r",stdin);
-    memset(visited, 0, sizeof(visited));
-    cin>>nn>>mm;
-    for(int i=0;i<nn;i++)
-        for(int j=0;j<mm;j++) {
-            cin>>graph[i][j];
-            if(graph[i][j] == 'H') x = i, y = j;
-        }
-    int res = bfs(x, y);
-    if(res == -1) cout<<"Hi and Ho will not have lunch."<<endl;
-    else cout<<res<<endl;
+    //freopen("../input.txt", "r", stdin);
+    cin>>n>>m;
+    pii s;
+    for(int i = 0; i < n; i++) {
+        cin>>arr[i];
+        auto x = find(arr[i].begin(), arr[i].end(), 'H');
+        if(x != arr[i].end()) s.first = i, s.second = int(x - arr[i].begin());
+    }
+    int ans = bfs(s);
+    if(ans == inf) cout<<"Hi and Ho will not have lunch."<<endl;
+    else cout<<ans<<endl;
     return 0;
 }

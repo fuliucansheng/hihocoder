@@ -1,6 +1,4 @@
-#include <iostream>
-#include <cstring>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 const int maxn = 1050;
 int vis[maxn], graph[maxn][maxn], rec[maxn], m, n;
