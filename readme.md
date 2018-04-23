@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 472&nbsp;|&nbsp;Submit: 1524&nbsp;|&nbsp;Hiho: 46&nbsp;|&nbsp;Contest: 39
+##### 拂柳残声&nbsp;|&nbsp;AC: 481&nbsp;|&nbsp;Submit: 1553&nbsp;|&nbsp;Hiho: 47&nbsp;|&nbsp;Contest: 41
 
 ### Features
 
@@ -491,3 +491,9 @@ node hiho.js # 即可生成readme.md
 |470|[hiho字符串3](http://www.hihocoder.com/problemset/problem/1717)|[1717](./solutions/1717.cpp)|
 |471|[最长一次上升子序列](http://www.hihocoder.com/problemset/problem/1718)|[1718](./solutions/1718.cpp)|
 |472|[工具选择](http://www.hihocoder.com/problemset/problem/1719)|[1719](./solutions/1719.cpp)|
+|473|[算式最大值](http://www.hihocoder.com/problemset/problem/1724)|[1724](./solutions/1724.cpp)|
+|474|[朋友字符串](http://www.hihocoder.com/problemset/problem/1725)|[1725](./solutions/1725.cpp)|
+|475|[区间覆盖问题](http://www.hihocoder.com/problemset/problem/1726)|[1726](./solutions/1726.cpp)|
+|476|[卡片游戏](http://www.hihocoder.com/problemset/problem/1728)|[1728](./solutions/1728.cpp)|
+|477|[宝藏坐标](http://www.hihocoder.com/problemset/problem/1729)|[1729](./solutions/1729.cpp)|
+|478|[物品分类](http://www.hihocoder.com/problemset/problem/1730)|[1730](./solutions/1730.cpp)|
