@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 485&nbsp;|&nbsp;Submit: 1559&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 42
+##### 拂柳残声&nbsp;|&nbsp;AC: 489&nbsp;|&nbsp;Submit: 1574&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 43
 
 ### Features
 
@@ -501,3 +501,7 @@ node hiho.js # 即可生成readme.md
 |480|[1-偏差排列](http://www.hihocoder.com/problemset/problem/1732)|[1732](./solutions/1732.cpp)|
 |481|[递增N元组](http://www.hihocoder.com/problemset/problem/1733)|[1733](./solutions/1733.cpp)|
 |482|[逃离迷宫5](http://www.hihocoder.com/problemset/problem/1734)|[1734](./solutions/1734.cpp)|
+|483|[最大的K-偏差排列](http://www.hihocoder.com/problemset/problem/1736)|[1736](./solutions/1736.cpp)|
+|484|[孤独的字符](http://www.hihocoder.com/problemset/problem/1737)|[1737](./solutions/1737.cpp)|
+|485|[秋天来了](http://www.hihocoder.com/problemset/problem/1738)|[1738](./solutions/1738.cpp)|
+|486|[Nim森林](http://www.hihocoder.com/problemset/problem/1739)|[1739](./solutions/1739.cpp)|
