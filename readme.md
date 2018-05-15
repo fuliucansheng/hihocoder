@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 489&nbsp;|&nbsp;Submit: 1574&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 43
+##### 拂柳残声&nbsp;|&nbsp;AC: 492&nbsp;|&nbsp;Submit: 1580&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 44
 
 ### Features
 
@@ -492,16 +492,22 @@ node hiho.js # 即可生成readme.md
 |471|[hiho字符串3](http://www.hihocoder.com/problemset/problem/1717)|[1717](./solutions/1717.cpp)|
 |472|[最长一次上升子序列](http://www.hihocoder.com/problemset/problem/1718)|[1718](./solutions/1718.cpp)|
 |473|[工具选择](http://www.hihocoder.com/problemset/problem/1719)|[1719](./solutions/1719.cpp)|
-|474|[算式最大值](http://www.hihocoder.com/problemset/problem/1724)|[1724](./solutions/1724.cpp)|
-|475|[朋友字符串](http://www.hihocoder.com/problemset/problem/1725)|[1725](./solutions/1725.cpp)|
-|476|[区间覆盖问题](http://www.hihocoder.com/problemset/problem/1726)|[1726](./solutions/1726.cpp)|
-|477|[卡片游戏](http://www.hihocoder.com/problemset/problem/1728)|[1728](./solutions/1728.cpp)|
-|478|[宝藏坐标](http://www.hihocoder.com/problemset/problem/1729)|[1729](./solutions/1729.cpp)|
-|479|[物品分类](http://www.hihocoder.com/problemset/problem/1730)|[1730](./solutions/1730.cpp)|
-|480|[1-偏差排列](http://www.hihocoder.com/problemset/problem/1732)|[1732](./solutions/1732.cpp)|
-|481|[递增N元组](http://www.hihocoder.com/problemset/problem/1733)|[1733](./solutions/1733.cpp)|
-|482|[逃离迷宫5](http://www.hihocoder.com/problemset/problem/1734)|[1734](./solutions/1734.cpp)|
-|483|[最大的K-偏差排列](http://www.hihocoder.com/problemset/problem/1736)|[1736](./solutions/1736.cpp)|
-|484|[孤独的字符](http://www.hihocoder.com/problemset/problem/1737)|[1737](./solutions/1737.cpp)|
-|485|[秋天来了](http://www.hihocoder.com/problemset/problem/1738)|[1738](./solutions/1738.cpp)|
-|486|[Nim森林](http://www.hihocoder.com/problemset/problem/1739)|[1739](./solutions/1739.cpp)|
+|474|[小数数字](http://www.hihocoder.com/problemset/problem/1720)|[1720](./solutions/1720.cpp)|
+|475|[回文字符串2](http://www.hihocoder.com/problemset/problem/1721)|[1721](./solutions/1721.cpp)|
+|476|[最小差值](http://www.hihocoder.com/problemset/problem/1722)|[1722](./solutions/1722.cpp)|
+|477|[算式最大值](http://www.hihocoder.com/problemset/problem/1724)|[1724](./solutions/1724.cpp)|
+|478|[朋友字符串](http://www.hihocoder.com/problemset/problem/1725)|[1725](./solutions/1725.cpp)|
+|479|[区间覆盖问题](http://www.hihocoder.com/problemset/problem/1726)|[1726](./solutions/1726.cpp)|
+|480|[卡片游戏](http://www.hihocoder.com/problemset/problem/1728)|[1728](./solutions/1728.cpp)|
+|481|[宝藏坐标](http://www.hihocoder.com/problemset/problem/1729)|[1729](./solutions/1729.cpp)|
+|482|[物品分类](http://www.hihocoder.com/problemset/problem/1730)|[1730](./solutions/1730.cpp)|
+|483|[1-偏差排列](http://www.hihocoder.com/problemset/problem/1732)|[1732](./solutions/1732.cpp)|
+|484|[递增N元组](http://www.hihocoder.com/problemset/problem/1733)|[1733](./solutions/1733.cpp)|
+|485|[逃离迷宫5](http://www.hihocoder.com/problemset/problem/1734)|[1734](./solutions/1734.cpp)|
+|486|[最大的K-偏差排列](http://www.hihocoder.com/problemset/problem/1736)|[1736](./solutions/1736.cpp)|
+|487|[孤独的字符](http://www.hihocoder.com/problemset/problem/1737)|[1737](./solutions/1737.cpp)|
+|488|[秋天来了](http://www.hihocoder.com/problemset/problem/1738)|[1738](./solutions/1738.cpp)|
+|489|[Nim森林](http://www.hihocoder.com/problemset/problem/1739)|[1739](./solutions/1739.cpp)|
+|490|[替换函数](http://www.hihocoder.com/problemset/problem/1740)|[1740](./solutions/1740.cpp)|
+|491|[树的权重](http://www.hihocoder.com/problemset/problem/1742)|[1742](./solutions/1742.cpp)|
+|492|[K-偏差排列](http://www.hihocoder.com/problemset/problem/1743)|[1743](./solutions/1743.cpp)|
