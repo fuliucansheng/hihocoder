@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 492&nbsp;|&nbsp;Submit: 1580&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 44
+##### 拂柳残声&nbsp;|&nbsp;AC: 496&nbsp;|&nbsp;Submit: 1587&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 45
 
 ### Features
 
@@ -511,3 +511,7 @@ node hiho.js # 即可生成readme.md
 |490|[替换函数](http://www.hihocoder.com/problemset/problem/1740)|[1740](./solutions/1740.cpp)|
 |491|[树的权重](http://www.hihocoder.com/problemset/problem/1742)|[1742](./solutions/1742.cpp)|
 |492|[K-偏差排列](http://www.hihocoder.com/problemset/problem/1743)|[1743](./solutions/1743.cpp)|
+|493|[hohahola](http://www.hihocoder.com/problemset/problem/1744)|[1744](./solutions/1744.cpp)|
+|494|[最大顺子](http://www.hihocoder.com/problemset/problem/1745)|[1745](./solutions/1745.cpp)|
+|495|[路径包含问题](http://www.hihocoder.com/problemset/problem/1746)|[1746](./solutions/1746.cpp)|
+|496|[随机排列](http://www.hihocoder.com/problemset/problem/1747)|[1747](./solutions/1747.cpp)|
