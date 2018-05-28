@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 496&nbsp;|&nbsp;Submit: 1587&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 45
+##### 拂柳残声&nbsp;|&nbsp;AC: 500&nbsp;|&nbsp;Submit: 1594&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 45
 
 ### Features
 
@@ -515,3 +515,7 @@ node hiho.js # 即可生成readme.md
 |494|[最大顺子](http://www.hihocoder.com/problemset/problem/1745)|[1745](./solutions/1745.cpp)|
 |495|[路径包含问题](http://www.hihocoder.com/problemset/problem/1746)|[1746](./solutions/1746.cpp)|
 |496|[随机排列](http://www.hihocoder.com/problemset/problem/1747)|[1747](./solutions/1747.cpp)|
+|497|[最小排列](http://www.hihocoder.com/problemset/problem/1748)|[1748](./solutions/1748.cpp)|
+|498|[最大前缀和](http://www.hihocoder.com/problemset/problem/1749)|[1749](./solutions/1749.cpp)|
+|499|[质数](http://www.hihocoder.com/problemset/problem/1750)|[1750](./solutions/1750.cpp)|
+|500|[随机排列2](http://www.hihocoder.com/problemset/problem/1751)|[1751](./solutions/1751.cpp)|
