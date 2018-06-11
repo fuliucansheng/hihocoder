@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 500&nbsp;|&nbsp;Submit: 1594&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 45
+##### 拂柳残声&nbsp;|&nbsp;AC: 508&nbsp;|&nbsp;Submit: 1620&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 48
 
 ### Features
 
@@ -519,3 +519,11 @@ node hiho.js # 即可生成readme.md
 |498|[最大前缀和](http://www.hihocoder.com/problemset/problem/1749)|[1749](./solutions/1749.cpp)|
 |499|[质数](http://www.hihocoder.com/problemset/problem/1750)|[1750](./solutions/1750.cpp)|
 |500|[随机排列2](http://www.hihocoder.com/problemset/problem/1751)|[1751](./solutions/1751.cpp)|
+|501|[方向](http://www.hihocoder.com/problemset/problem/1752)|[1752](./solutions/1752.cpp)|
+|502|[被遗忘的整数](http://www.hihocoder.com/problemset/problem/1753)|[1753](./solutions/1753.cpp)|
+|503|[金额组合](http://www.hihocoder.com/problemset/problem/1754)|[1754](./solutions/1754.cpp)|
+|504|[数字组合](http://www.hihocoder.com/problemset/problem/1755)|[1755](./solutions/1755.cpp)|
+|505|[命名](http://www.hihocoder.com/problemset/problem/1760)|[1760](./solutions/1760.cpp)|
+|506|[洗牌](http://www.hihocoder.com/problemset/problem/1761)|[1761](./solutions/1761.cpp)|
+|507|[密码更改](http://www.hihocoder.com/problemset/problem/1762)|[1762](./solutions/1762.cpp)|
+|508|[道路摧毁](http://www.hihocoder.com/problemset/problem/1763)|[1763](./solutions/1763.cpp)|
