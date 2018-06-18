@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 508&nbsp;|&nbsp;Submit: 1620&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 48
+##### 拂柳残声&nbsp;|&nbsp;AC: 512&nbsp;|&nbsp;Submit: 1634&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 49
 
 ### Features
 
@@ -527,3 +527,7 @@ node hiho.js # 即可生成readme.md
 |506|[洗牌](http://www.hihocoder.com/problemset/problem/1761)|[1761](./solutions/1761.cpp)|
 |507|[密码更改](http://www.hihocoder.com/problemset/problem/1762)|[1762](./solutions/1762.cpp)|
 |508|[道路摧毁](http://www.hihocoder.com/problemset/problem/1763)|[1763](./solutions/1763.cpp)|
+|509|[公平划分](http://www.hihocoder.com/problemset/problem/1764)|[1764](./solutions/1764.cpp)|
+|510|[配对](http://www.hihocoder.com/problemset/problem/1765)|[1765](./solutions/1765.cpp)|
+|511|[字符串问题](http://www.hihocoder.com/problemset/problem/1766)|[1766](./solutions/1766.cpp)|
+|512|[公共山峰](http://www.hihocoder.com/problemset/problem/1767)|[1767](./solutions/1767.cpp)|
