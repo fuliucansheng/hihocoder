@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 512&nbsp;|&nbsp;Submit: 1634&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 49
+##### 拂柳残声&nbsp;|&nbsp;AC: 516&nbsp;|&nbsp;Submit: 1642&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 50
 
 ### Features
 
@@ -531,3 +531,7 @@ node hiho.js # 即可生成readme.md
 |510|[配对](http://www.hihocoder.com/problemset/problem/1765)|[1765](./solutions/1765.cpp)|
 |511|[字符串问题](http://www.hihocoder.com/problemset/problem/1766)|[1766](./solutions/1766.cpp)|
 |512|[公共山峰](http://www.hihocoder.com/problemset/problem/1767)|[1767](./solutions/1767.cpp)|
+|513|[真正的素数](http://www.hihocoder.com/problemset/problem/1768)|[1768](./solutions/1768.cpp)|
+|514|[最长子段](http://www.hihocoder.com/problemset/problem/1769)|[1769](./solutions/1769.cpp)|
+|515|[单调数](http://www.hihocoder.com/problemset/problem/1770)|[1770](./solutions/1770.cpp)|
+|516|[解方程](http://www.hihocoder.com/problemset/problem/1771)|[1771](./solutions/1771.cpp)|
