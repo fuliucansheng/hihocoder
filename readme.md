@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 520&nbsp;|&nbsp;Submit: 1654&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 51
+##### 拂柳残声&nbsp;|&nbsp;AC: 524&nbsp;|&nbsp;Submit: 1667&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 52
 
 ### Features
 
@@ -539,3 +539,7 @@ node hiho.js # 即可生成readme.md
 |518|[打牌](http://www.hihocoder.com/problemset/problem/1773)|[1773](./solutions/1773.cpp)|
 |519|[最佳数字](http://www.hihocoder.com/problemset/problem/1774)|[1774](./solutions/1774.cpp)|
 |520|[密码转化](http://www.hihocoder.com/problemset/problem/1775)|[1775](./solutions/1775.cpp)|
+|521|[序列](http://www.hihocoder.com/problemset/problem/1776)|[1776](./solutions/1776.cpp)|
+|522|[彩球](http://www.hihocoder.com/problemset/problem/1777)|[1777](./solutions/1777.cpp)|
+|523|[最优子段](http://www.hihocoder.com/problemset/problem/1778)|[1778](./solutions/1778.cpp)|
+|524|[公路收费](http://www.hihocoder.com/problemset/problem/1779)|[1779](./solutions/1779.cpp)|
