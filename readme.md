@@ -1,6 +1,6 @@
 
 # HihoCoder
-##### 拂柳残声&nbsp;|&nbsp;AC: 534&nbsp;|&nbsp;Submit: 1699&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 54
+##### 拂柳残声&nbsp;|&nbsp;AC: 564&nbsp;|&nbsp;Submit: 1808&nbsp;|&nbsp;Hiho: 48&nbsp;|&nbsp;Contest: 56
 
 ### Features
 
@@ -545,7 +545,41 @@ node hiho.js # 即可生成readme.md
 |524|[最优子段](http://www.hihocoder.com/problemset/problem/1778)|[1778](./solutions/1778.cpp)|
 |525|[公路收费](http://www.hihocoder.com/problemset/problem/1779)|[1779](./solutions/1779.cpp)|
 |526|[Another Assignment](http://www.hihocoder.com/problemset/problem/1780)|[1780](./solutions/1780.cpp)|
-|527|[偶数长度回文子串](http://www.hihocoder.com/problemset/problem/1788)|[1788](./solutions/1788.cpp)|
-|528|[阶乘问题](http://www.hihocoder.com/problemset/problem/1789)|[1789](./solutions/1789.cpp)|
-|529|[特工配对](http://www.hihocoder.com/problemset/problem/1790)|[1790](./solutions/1790.cpp)|
-|530|[幸运数字](http://www.hihocoder.com/problemset/problem/1791)|[1791](./solutions/1791.cpp)|
+|527|[传输数据](http://www.hihocoder.com/problemset/problem/1784)|[1784](./solutions/1784.cpp)|
+|528|[数字游戏2](http://www.hihocoder.com/problemset/problem/1785)|[1785](./solutions/1785.cpp)|
+|529|[跳石头](http://www.hihocoder.com/problemset/problem/1786)|[1786](./solutions/1786.cpp)|
+|530|[道路建设](http://www.hihocoder.com/problemset/problem/1787)|[1787](./solutions/1787.cpp)|
+|531|[偶数长度回文子串](http://www.hihocoder.com/problemset/problem/1788)|[1788](./solutions/1788.cpp)|
+|532|[阶乘问题](http://www.hihocoder.com/problemset/problem/1789)|[1789](./solutions/1789.cpp)|
+|533|[特工配对](http://www.hihocoder.com/problemset/problem/1790)|[1790](./solutions/1790.cpp)|
+|534|[幸运数字](http://www.hihocoder.com/problemset/problem/1791)|[1791](./solutions/1791.cpp)|
+|535|[数位翻转](http://www.hihocoder.com/problemset/problem/1792)|[1792](./solutions/1792.cpp)|
+|536|[最短公共子序列](http://www.hihocoder.com/problemset/problem/1793)|[1793](./solutions/1793.cpp)|
+|537|[拼三角形](http://www.hihocoder.com/problemset/problem/1794)|[1794](./solutions/1794.cpp)|
+|538|[神奇的序列](http://www.hihocoder.com/problemset/problem/1795)|[1795](./solutions/1795.cpp)|
+|539|[完美K倍子数组](http://www.hihocoder.com/problemset/problem/1796)|[1796](./solutions/1796.cpp)|
+|540|[单调递增子序列](http://www.hihocoder.com/problemset/problem/1797)|[1797](./solutions/1797.cpp)|
+|541|[666](http://www.hihocoder.com/problemset/problem/1798)|[1798](./solutions/1798.cpp)|
+|542|[玩具设计师](http://www.hihocoder.com/problemset/problem/1800)|[1800](./solutions/1800.cpp)|
+|543|[剪切字符串](http://www.hihocoder.com/problemset/problem/1801)|[1801](./solutions/1801.cpp)|
+|544|[圆的最大权值](http://www.hihocoder.com/problemset/problem/1812)|[1812](./solutions/1812.cpp)|
+|545|[取球游戏](http://www.hihocoder.com/problemset/problem/1814)|[1814](./solutions/1814.cpp)|
+|546|[中位数](http://www.hihocoder.com/problemset/problem/1815)|[1815](./solutions/1815.cpp)|
+|547|[工作城市分配](http://www.hihocoder.com/problemset/problem/1816)|[1816](./solutions/1816.cpp)|
+|548|[工作城市分配2](http://www.hihocoder.com/problemset/problem/1817)|[1817](./solutions/1817.cpp)|
+|549|[顺子组合](http://www.hihocoder.com/problemset/problem/1818)|[1818](./solutions/1818.cpp)|
+|550|[栈的加强版](http://www.hihocoder.com/problemset/problem/1819)|[1819](./solutions/1819.cpp)|
+|551|[切割木棒](http://www.hihocoder.com/problemset/problem/1820)|[1820](./solutions/1820.cpp)|
+|552|[取卡片游戏](http://www.hihocoder.com/problemset/problem/1821)|[1821](./solutions/1821.cpp)|
+|553|[战舰日常任务](http://www.hihocoder.com/problemset/problem/1822)|[1822](./solutions/1822.cpp)|
+|554|[树的黑白染色](http://www.hihocoder.com/problemset/problem/1823)|[1823](./solutions/1823.cpp)|
+|555|[右转九十度](http://www.hihocoder.com/problemset/problem/1824)|[1824](./solutions/1824.cpp)|
+|556|[钝角三角形](http://www.hihocoder.com/problemset/problem/1825)|[1825](./solutions/1825.cpp)|
+|557|[咖啡店选址](http://www.hihocoder.com/problemset/problem/1826)|[1826](./solutions/1826.cpp)|
+|558|[队长人选](http://www.hihocoder.com/problemset/problem/1827)|[1827](./solutions/1827.cpp)|
+|559|[鎕鎕鎕](http://www.hihocoder.com/problemset/problem/1838)|[1838](./solutions/1838.cpp)|
+|560|[榶榶榶](http://www.hihocoder.com/problemset/problem/1839)|[1839](./solutions/1839.cpp)|
+|561|[AB字符串](http://www.hihocoder.com/problemset/problem/1842)|[1842](./solutions/1842.cpp)|
+|562|[骨牌塔](http://www.hihocoder.com/problemset/problem/1843)|[1843](./solutions/1843.cpp)|
+|563|[数位乘积](http://www.hihocoder.com/problemset/problem/1844)|[1844](./solutions/1844.cpp)|
+|564|[泥泞的道路](http://www.hihocoder.com/problemset/problem/1845)|[1845](./solutions/1845.cpp)|
